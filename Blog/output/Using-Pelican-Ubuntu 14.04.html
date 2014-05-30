@@ -1,94 +1,121 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="">	
 <head>
+	<meta charset="utf-8"/>
+	<title>Using pelican for Blog - Some kind of notepad for myself...</title>	
+	<meta name="author" content="Yi-Ping Huang">
+	
 
-        <title>Using pelican for Blog</title>
-        <meta charset="utf-8" />
-
-
-        <!-- Mobile viewport optimized: j.mp/bplateviewport -->
-        <meta name="viewport" content="width=device-width,initial-scale=1, maximum-scale=1">
-
-        <link rel="stylesheet" type="text/css" href="./theme/gumby.css" />
-        <link rel="stylesheet" type="text/css" href="./theme/style.css" />
-        <link rel="stylesheet" type="text/css" href="./theme/pygment.css" />
-
-        <script src="./theme/js/libs/modernizr-2.6.2.min.js"></script>
+	<meta name="description" content="Generate static blog posts by pelican to record some technical details about coding/physics/linux/... for myself.">
 
 
-
-
-
+	<link rel="top" href="#" /><link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,300italic,400italic,600italic|Source+Code+Pro' rel='stylesheet' type='text/css'></link>
+	<link rel="stylesheet" href="./theme/css/main.css" type="text/css" />
+		
 
 </head>
-
-<body id="index" class="home">
-
+	
+<body>
 
     <div class="container">
+	  
+	  <header role="banner">
+	    <div class="feeds">
+	    </div>
+		<a href="." class="title">Some kind of notepad for myself...</a>
+      </header>
+	
+	  <div class="wrapper">
 
-        <div class="row">
-
-          <header id="banner" class="body">
-                  <h1><a href=".">Some kind of notepad for myself... <strong></strong></a></h1>
-          </header><!-- /#banner -->
-
-            <div id="navigation" class="navbar row">
-              <a href="#" gumby-trigger="#navigation &gt; ul" class="toggle"><i class="icon-menu"></i></a>
-             
-              <ul class="columns">
-                <li><a href=".">Home</a></li>
-
-
-              </ul>
-            </div>
-
-<section id="content" class="body">
-
-   <div class="row">
-        <div class="eleven columns">
-
-
-            <header>
-              <h2 class="entry-title">
-                <a href="./Using-Pelican-Ubuntu 14.04.html" rel="bookmark"
-                   title="Permalink to Using pelican for Blog">Using pelican for Blog</a></h2>
-           
-            </header>
-            <footer class="post-info">
-              <abbr class="published" title="2014-05-29T00:00:00">
-                Thu 29 May 2014
-              </abbr>
-              <address class="vcard author">
-                By <a class="url fn" href="./author/yi-ping-huang.html">Yi-Ping Huang</a>
-              </address>
-            </footer><!-- /.post-info -->
-            <div class="entry-content">
-              <p>Using pelican to generate blog posts is quite convenient. After several steps,
-your blog is ready to go. To do that, we need to learn two tools at least:</p>
-<ol>
-<li>How to use markdown.</li>
-<li>Basic pelican operation.</li>
-</ol>
-<p>Following are some useful links</p>
-<p>Link:http://hackercodex.com/guide/pelican-static-site-generator-install/</p>
+		  <div role="main" class="content">
+	<article class="full">
+			
+		<h1>Using pelican for Blog</h1>
+		
+<div class="metadata">
+  <time datetime="2014-05-29T00:00:00" pubdate>Thu 29 May 2014</time>
+    <address class="vcard author">
+      by <a class="url fn" href="./author/yi-ping-huang.html">Yi-Ping Huang</a>
+    </address>
+  in <a href="./category/tutorial.html">Tutorial</a>
+<p class="tags">tagged <a href="./tag/pelican.html">Pelican</a>, <a href="./tag/ubuntu.html">Ubuntu</a>, <a href="./tag/tutorial.html">Tutorial</a></p></div>		
+		<p>Using pelican to generate static blog posts is quite convenient. I create this
+blog as a notepad to record some technical details about how to set things up
+for those things I would like to learn.</p>
+<p>The blog should support several features:</p>
+<ul>
+<li>Easy to write posts.</li>
+<li>Support $\LaTeX$, so I can type some formula when I need to.</li>
+<li>Some nice presentation about code.</li>
+</ul>
+<p>Some years ago, I kind of feel it is impossible to achieve the three criteria
+simultaneously. Luckily, thanks to
+the community of pelican and other groups of people to glue those three features
+together. Now pelican provides an elegant framework for people like me to setup a blog.</p>
+<p>To do that, we need to learn several tools at least:</p>
+<ul>
+<li>How to use markdown: There is a tutorial claiming you can learn <a href="http://markdowntutorial.com/">markdow</a> in 10 minutes, which is quite true for my need.</li>
+<li>Basic pelican operation:<ul>
+<li>Following are some useful
+<a href="http://hackercodex.com/guide/pelican-static-site-generator-install">links</a> to
+setup the system.</li>
+<li>Find some details about pelican form the official documentation.</li>
+</ul>
+</li>
+</ul>
+<p>Now I will break down those steps into pieces.</p>
 <ul>
 <li>First, using pelican-quickstart to generate the structure.</li>
-<li>Second, install your favorite theme by
-pelican-themes --install $PATH_TO_THEME --verbose</li>
-<li>Third, set the variable THEME= favorite theme in pelicanconf.py.</li>
+<li>
+<p>Second, install your favorite theme by</p>
+<p>pelican-themes --install $PATH_TO_THEME --verbose</p>
+</li>
+<li>
+<p>Third, set the variable THEME= FAVORITE_THEME in pelicanconf.py.</p>
+</li>
 </ul>
-<p>In order to activate $Latex$ display, we need to activate the plugin
+<p>In order to activate $\LaTeX$ display, we need to activate the plugin
 'render_math'.</p>
 <ul>
-<li>Get the plugin.</li>
-<li>Set the plugin path by
-PLUGIN_PATH='path to pelican-plugins'</li>
-<li>Activate the plugins related to $Latex$ display
-PLUGINS=['render_math']</li>
+<li>Get the plugin from git.</li>
+<li>
+<p>Set following parameters in pelicanconf.py</p>
+<ul>
+<li>Set the plugin path by</li>
 </ul>
-<p>For the notebook of ipython, we need the plugin
-
+<p>PLUGIN_PATH='PATH_TO_PELICAN-PLUGINS'</p>
+<ul>
+<li>Activate the plugins related to $\LaTeX$ display</li>
+</ul>
+<p>PLUGINS=['render_math']</p>
+</li>
+</ul>
+<p>For the notebook of ipython, we need the plugin <a href="https://github.com/getpelican/pelican-plugins/blob/master/liquid_tags">Liquid-style
+Tags</a>.</p>
+<ul>
+<li>
+<p>Following the instruction to install and activate the plugin. </p>
+<p>{% notebook xxx.ipynb %}</p>
+</li>
+<li>
+<p>Create a sub folder under contnet named notebooks. And put the ipython files
+you want to included in the post there.</p>
+</li>
+<li>Insert the liquid tags in the post's markdown file: </li>
+<li>
+<p>In pelicanconf.py, include the line</p>
+<p>EXTRA_HEADER = open('_nb_header.html').read().decode('utf-8')</p>
+</li>
+<li>
+<p>I don't actually know where to add following lines... but I am happy with the
+presentation.</p>
+<p>{% if EXTRA_HEADER %}
+{{ EXTRA_HEADER }}
+{% endif %}</p>
+</li>
+</ul>
+<h2>Here is the content of the including ipython file.</h2>
+<p>
 <div class="cell border-box-sizing text_cell rendered">
 <div class="prompt input_prompt">
 </div>
@@ -132,11 +159,11 @@ Populating the interactive namespace from numpy and matplotlib
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">
-In&nbsp;[5]:
+In&nbsp;[2]:
 </div>
 <div class="inner_cell">
     <div class="input_area">
-<div class="highlight-ipynb"><pre class="ipynb"><span class="n">plt</span><span class="o">.</span><span class="n">xkcd</span><span class="p">()</span>  <span class="c"># Yes...</span>
+<div class="highlight-ipynb"><pre class="ipynb"><span class="n">plt</span><span class="o">.</span><span class="n">xkcd</span><span class="p">()</span>
 <span class="n">fig</span><span class="o">=</span><span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">()</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">sin</span><span class="p">(</span><span class="n">linspace</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">10</span><span class="p">)))</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s">&#39;This is a wicked sin!!!&#39;</span><span class="p">)</span>
@@ -589,7 +616,7 @@ In&nbsp;[3]:
 </div>
 <div class="inner_cell">
     <div class="input_area">
-<div class="highlight-ipynb"><pre class="ipynb"><span class="n">plt</span><span class="o">.</span><span class="n">xkcd</span><span class="p">()</span>  <span class="c"># Yes...</span>
+<div class="highlight-ipynb"><pre class="ipynb"><span class="n">plt</span><span class="o">.</span><span class="n">xkcd</span><span class="p">()</span>
 <span class="n">fig</span><span class="o">=</span><span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">()</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">sin</span><span class="p">(</span><span class="n">linspace</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">10</span><span class="p">)))</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s">&#39;This is a wicked sin!!!&#39;</span><span class="p">)</span>
@@ -1038,11 +1065,11 @@ SUVORK5CYII=
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">
-In&nbsp;[6]:
+In&nbsp;[4]:
 </div>
 <div class="inner_cell">
     <div class="input_area">
-<div class="highlight-ipynb"><pre class="ipynb"><span class="n">plt</span><span class="o">.</span><span class="n">xkcd</span><span class="p">()</span>  <span class="c"># Yes...</span>
+<div class="highlight-ipynb"><pre class="ipynb"><span class="n">plt</span><span class="o">.</span><span class="n">xkcd</span><span class="p">()</span>
 <span class="n">fig</span><span class="o">=</span><span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">()</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">sin</span><span class="p">(</span><span class="n">linspace</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">10</span><span class="p">)))</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s">&#39;This is a wicked sin!!!&#39;</span><span class="p">)</span>
@@ -1487,21 +1514,6 @@ SUVORK5CYII=
 </div>
 </div>
 
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">
-In&nbsp;[]:
-</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class="highlight-ipynb"><pre class="ipynb">
-</pre></div>
-
-</div>
-</div>
-</div>
-
 </div></p><script type= "text/javascript">
     if (!document.getElementById('mathjaxscript_pelican_#%@#$@#')) {
         var mathjaxscript = document.createElement('script');
@@ -1532,83 +1544,55 @@ In&nbsp;[]:
         (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
     }
 </script>
+	
 
-            </div><!-- /.entry-content -->
+	</article>
 
-
-        </div><!-- /.eleven.columns -->
-        
-<div class="three columns">
-
-<h4>Pages</h4>
-
- <ul>
-  </ul>
-
-<h4>Categories</h4>
-<ul>
-		<li><a href="./category/tutorial.html">Tutorial</a></li>
-</ul>
+    <p>
+	<a href="https://twitter.com/share" class="twitter-share-button" data-via="" data-lang="en" data-size="large" data-related="">Tweet</a>
+	<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+	</p>
 
 
-<h4>Tags</h4>
-	<ul>
-	    <li class="tag-4"><a href="./tag/tutorial.html">Tutorial</a></li>
-	    <li class="tag-4"><a href="./tag/ubuntu.html">Ubuntu</a></li>
-	    <li class="tag-4"><a href="./tag/pelican.html">Pelican</a></li>
-</ul>
+		  </div>	
+		  
+		  <div class="sidebar">
 
+	        <nav>
+	          <h2>Categories</h2>
+	          <ul>
+	              <li class="active"><a href="./category/tutorial.html">Tutorial</a></li>
+	          </ul>
+	        </nav>
 
-<nav class="widget">
-  <h4>Social</h4>
-  <ul>
-    <li><a href="#">You can add links in your config file</a></li>
-    <li><a href="#">Another social link</a></li>
-  </ul>
-</nav>
+	          <aside>
+	          <h2>Social</h2>
+			    <ul class="social">
+				  <li><a href="https://github.com/YiPingHuang">Github</a><i></i></li>
+			    </ul>
+			  </aside>
 
-</div> </div><!-- /.row -->
+	          <aside>
+	            <h2>Blogroll</h2>
+	            <ul>
+	                <li><a href="http://getpelican.com/">Pelican</a></li>
+	                <li><a href="http://python.org/">Python.org</a></li>
+	            </ul>
+	          </aside>
 
+		  </div>
 
-</section>
+	  </div>
 
-       </div><!-- /.row -->
-    </div><!-- /.container -->
+      <footer>
+		<p role="contentinfo">
+		  © 2013 Yi-Ping Huang - Proudly powered by <a href="http://alexis.notmyidea.org/pelican/">pelican</a>. Theme <a href="https://github.com/fle/pelican-simplegrey">pelican-simplegrey</a>.
+    	</p>
 
+	  </footer>	
 
-       <div class="container.nopad bg">
+	</div>
+	
 
-    
-        <footer id="credits" class="row">
-          <div class="seven columns left-center">
-
-                   <address id="about" class="vcard body">
-                    Proudly powered by <a href="http://getpelican.com/">Pelican</a>,
-                    which takes great advantage of <a href="http://python.org">Python</a>.
-                    <br />
-                    Based on the <a target="_blank" href="http://gumbyframework.com">Gumby Framework</a>
-                    </address>
-          </div>
-
-
-          <div class="seven columns">
-            <div class="row">
-              <ul class="socbtns">
-
-
-
-
-
-              </ul>
-            </div>
-          </div>
-        </footer>
-
-    </div>
-
-
-  <script src="./theme/js/libs/jquery-1.9.1.min.js"></script>
-  <script src="./theme/js/libs/gumby.min.js"></script>
-  <script src="./theme/js/plugins.js"></script>
 </body>
 </html>

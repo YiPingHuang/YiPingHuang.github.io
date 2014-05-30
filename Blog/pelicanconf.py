@@ -3,10 +3,10 @@
 from __future__ import unicode_literals
 
 AUTHOR = u'Yi-Ping Huang'
-SITENAME = u'Some kind of notepad for myself...'
+SITENAME = u'Some kind of notepad for myself...to record technical details about coding/physics/linux'
 SITEURL = ''
 
-THEME='gum'
+THEME='pelican-simplegrey'
 
 TIMEZONE = 'USA/Boulder'
 
@@ -20,12 +20,11 @@ TRANSLATION_FEED_ATOM = None
 # Blogroll
 LINKS =  (('Pelican', 'http://getpelican.com/'),
           ('Python.org', 'http://python.org/'),
-          ('Jinja2', 'http://jinja.pocoo.org/'),
-          ('You can modify those links in your config file', '#'),)
+          )
 
 # Social widget
-SOCIAL = (('You can add links in your config file', '#'),
-          ('Another social link', '#'),)
+SOCIAL = (('Github', 'https://github.com/YiPingHuang'),
+          )
 
 DEFAULT_PAGINATION = 10
 
