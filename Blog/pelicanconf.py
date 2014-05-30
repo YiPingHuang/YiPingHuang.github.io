@@ -6,7 +6,7 @@ AUTHOR = u'Yi-Ping Huang'
 SITENAME = u'Some kind of notepad for myself...'
 SITEURL = ''
 
-THEME='zurb-F5-basic'
+THEME='gum'
 
 TIMEZONE = 'USA/Boulder'
 
@@ -31,3 +31,10 @@ DEFAULT_PAGINATION = 10
 
 # Uncomment following line if you want document-relative URLs when developing
 RELATIVE_URLS = True
+
+# Plugins
+PLUGIN_PATH='/home/yi-ping/virtualenvs/pelican/pelican-plugins'
+PLUGINS =['render_math','liquid_tags.img', 'liquid_tags.video', 'liquid_tags.youtube', 'liquid_tags.vimeo','liquid_tags.include_code', 'liquid_tags.notebook']
+
+# For ipython
+EXTRA_HEADER=open('_nb_header.html').read().decode('utf-8')
