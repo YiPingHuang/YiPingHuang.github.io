@@ -3,7 +3,7 @@
 from __future__ import unicode_literals
 
 AUTHOR = u'Yi-Ping Huang'
-SITENAME = u'Some kind of notepad for myself...to record technical details about coding/physics/linux'
+SITENAME = u'Some kind of notepad for myself...details about coding/physics/linux'
 SITEURL = ''
 
 THEME='pelican-simplegrey'
