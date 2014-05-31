@@ -6,7 +6,7 @@
 	<meta name="author" content="Yi-Ping Huang">
 	
 
-	<meta name="description" content="Generate static blog posts by pelican is convenient. This post describes the necessary information to set up pelican such that is support $LaTeX$ and ipython presentation. if (!document.getElementById('mathjaxscript_pelican_#%@#$@#')) { var mathjaxscript = document.createElement('script'); mathjaxscript.id = 'mathjaxscript_pelican_#%@#$@#'; mathjaxscript.type = 'text/javascript'; mathjaxscript.src = 'https:' == document.location.protocol ? 'https://c328740.ssl.cf1.rackcdn.com/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML' : 'http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'; mathjaxscript[(window.opera ? "innerHTML" : "text")] = "MathJax.Hub.Config({" + " config: ['MMLorHTML.js']," + " TeX: { extensions: ['AMSmath.js','AMSsymbols.js','noErrors.js','noUndefined.js'], equationNumbers: { autoNumber: 'AMS' } }," + " jax: ['input/TeX','input/MathML','output/HTML-CSS']," + " extensions: ['tex2jax.js','mml2jax.js','MathMenu.js','MathZoom.js']," + " displayAlign: 'center'," + " displayIndent: '0em'," + " showMathMenu: true," + " tex2jax: { " + " inlineMath: [ ['$','$'] ], " + " displayMath: [ ['$$','$$'] ]," + " processEscapes: true," + " preview: 'TeX'," + " }, " + " 'HTML-CSS': { " + " styles: { '.MathJax_Display, .MathJax .mo, .MathJax .mi, .MathJax .mn': {color: 'black ! important'} }" + " } " + "}); "; (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript); }">
+	<meta name="description" content="Generating static blog posts by pelican is convenient. This post describes the necessary information to set up pelican such that it supports $LaTeX$ and ipython presentation. if (!document.getElementById('mathjaxscript_pelican_#%@#$@#')) { var mathjaxscript = document.createElement('script'); mathjaxscript.id = 'mathjaxscript_pelican_#%@#$@#'; mathjaxscript.type = 'text/javascript'; mathjaxscript.src = 'https:' == document.location.protocol ? 'https://c328740.ssl.cf1.rackcdn.com/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML' : 'http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'; mathjaxscript[(window.opera ? "innerHTML" : "text")] = "MathJax.Hub.Config({" + " config: ['MMLorHTML.js']," + " TeX: { extensions: ['AMSmath.js','AMSsymbols.js','noErrors.js','noUndefined.js'], equationNumbers: { autoNumber: 'AMS' } }," + " jax: ['input/TeX','input/MathML','output/HTML-CSS']," + " extensions: ['tex2jax.js','mml2jax.js','MathMenu.js','MathZoom.js']," + " displayAlign: 'center'," + " displayIndent: '0em'," + " showMathMenu: true," + " tex2jax: { " + " inlineMath: [ ['$','$'] ], " + " displayMath: [ ['$$','$$'] ]," + " processEscapes: true," + " preview: 'TeX'," + " }, " + " 'HTML-CSS': { " + " styles: { '.MathJax_Display, .MathJax .mo, .MathJax .mi, .MathJax .mn': {color: 'black ! important'} }" + " } " + "}); "; (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript); }">
 
 
 	<link rel="top" href="#" /><link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,300italic,400italic,600italic|Source+Code+Pro' rel='stylesheet' type='text/css'></link>
@@ -42,16 +42,16 @@
 		<p>Using pelican to generate static blog posts is quite convenient. I create this
 blog as a notepad to record some technical details about how to set things up
 for those things I would like to learn.</p>
-<p>The blog should support several features:</p>
+<p>I would like my blog to support several features:</p>
 <ul>
 <li>Easy to write posts.</li>
 <li>Support $\LaTeX$, so I can type some formula when I need to.</li>
-<li>Some nice presentation about code.</li>
+<li>Some nice presentation about codes.</li>
 </ul>
-<p>Some years ago, I kind of feel it is impossible to achieve the three criteria
+<p>Some years ago, I feel it is impossible to achieve the three criteria
 simultaneously. Luckily, thanks to
 the community of pelican and other groups of people to glue those three features
-together. Now pelican provides an elegant framework for people like me to setup a blog.</p>
+together. Now, pelican provides an elegant framework for people like me to setup a blog.</p>
 <p>To do that, we need to learn several tools at least:</p>
 <ul>
 <li>How to use markdown: There is a tutorial claiming you can learn <a href="http://markdowntutorial.com/">markdow</a> in 10 minutes, which is quite true for my need.</li>
