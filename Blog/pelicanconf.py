@@ -24,7 +24,8 @@ CATEGORY_FEED_ATOM = None
 TRANSLATION_FEED_ATOM = None
 
 # Blogroll
-LINKS =  (('Pelican', 'http://getpelican.com/'),
+LINKS =  (('Homepage','https://yipinghuang.github.io/'),
+          ('Pelican', 'http://getpelican.com/'),
           ('Python.org', 'http://python.org/'),
           )
 
