@@ -70,7 +70,6 @@
     </header>
     <div id="site_content">
       <div id="sidebar_container">
-        <h1> </h1>
 	<h1>I am somewhere in this building... </h1>
           <div style="text-align: center">
           <img src="images/map.jpg" width="450" height="340" alt="" /></div>

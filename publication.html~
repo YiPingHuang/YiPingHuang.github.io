@@ -84,7 +84,8 @@
       <div id="content">
         <h1>Selected publications</h1>
 	<h3>Complete list of publications can be found <a href="http://arxiv.org/a/huang_y_7">here</a></h3>
-			<ul>
+	<h4>In the description, no reference will be mentioned due to the lack of spacing. Checking the paper for more complete references.</h4>
+	<ul>
           <li>
           <a href="http://dx.doi.org/10.1103/PhysRevA.80.053610">Quantum phase diagrams of fermionic dipolar gases in a planar array of one-dimensional tubes
           </a> Yi-Ping Huang and Daw-Wei Wang, Phys. Rev. A 80, 053610 (2009)

@@ -46,7 +46,6 @@
               <!-- <li><a href="#">Drop Down Five</a></li> -->
             </ul>
           </li>
-	  <li><a href="Blog/output/index.html">Blog</a></li>
           <li><a href="links.html">Links</a></li>
           <li><a href="contact.html">Contact</a></li>
           <li><a href="#">Teaching</a>
@@ -71,24 +70,26 @@
     </header>
     <div id="site_content">
       <div id="sidebar_container">
-         <h1> </h1>
-       	<div style="text-align: center">
-          <img src="images/Pyrochlore.jpg" width="450" height="400" alt="" />
-         </div>
+        <h1> </h1>
+	<h1> </h1>
+          <div style="text-align: center">
+          <img src="images/MeItaly.jpg" width="450" height="340" alt="" /></div>
       </div>
       <div id="content">
-        <h1>Description of my interests for general reader</h1>
-        <p>My research interests focusing on the exotic emergent phenomena due to composite effects of fundamental physics.
-        The competition between different effects made those system interesting in various aspects(So my interest in physics diverges in some way...).
-        </p>
-        <p>
-	To me, I would like to know the general properties of those effects. What is its nature? 
-	For example, how the long-ranged anisotropic dipole-dipole interaction affect the quasi-one-dimensional physics?
-	Understanding the interplay between space anisotropy and anisotropy of interaction is the physics that I enjoy a lot.
-	How large spin-orbit coupling changes our understanding about systems without large spin-orbit coupling?
-	Finding spin-orbit coupling provides a chance to realize more constrained model under space group symmetry and further 
-	helps realizing the exotic topological insulator and topological order is exciting!
-        </p>
+        <h1>Short CV</h1>
+        <p> I am interested in theoretical condensed matter physics.
+        My research interests focusing on the exotic emergent phenomena due to composite effects of fundamental physics.
+	Especially those effects that could lead to exotic orders. These effects could came from a wide range of systems from 
+	ultracold atoms to transition metal oxides.</p>
+        <p> Education</p>
+        <ul>
+          <li>2004-2008 : Bachelar of Science in Physics - National Tsing-Hua University in Taiwan</li>
+          <li>2010-2012 : Master in Physics - University of Colorado at Boulder</li>
+          <li>2010- Now : PhD student in Physics - University of Colorado at Boulder</li>
+        </ul>
+        <p> Long version of my CV is <a href="CV.pdf">here</a>. 
+        List of my publication is <a href="publication.html">here</a>. 
+        List of my presentation is <a href="presentation.html">here</a>.</p>
       </div>
     </div>
     <footer>
