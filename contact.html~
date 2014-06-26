@@ -14,7 +14,7 @@
 <body>
   <div id="main">
     <header>
-		<div id="logo">
+      <div id="logo">
         <div id="logo_text">
           <!-- class="logo_colour", allows you to change the colour of the text -->
           <h1><a href="index.html">Yi-Ping<span class="logo_colour"> Huang</span></a></h1>
@@ -70,17 +70,19 @@
     </header>
     <div id="site_content">
       <div id="sidebar_container">
-        <div style="text-align: right">
-          <img src="images/Bus_Light.jpg" width="350" height="450" alt="" />
-        </div>
+        <h1> </h1>
+	<h1>I am somewhere in this building... </h1>
+          <div style="text-align: center">
+          <img src="images/map.jpg" width="450" height="340" alt="" /></div>
       </div>
       <div id="content">
-        <h1>Useful tools...</h1>
-        <p><a
-		href="http://nbviewer.ipython.org/gist/YiPingHuang/0fcf334d8d5396a37a9b">iPython</a>
-	whenever you need a Mexican hat!</p>
-	<p><a href="http://www.vim.org">Vim</a> is a good thing, maybe the best
-	of things, and no good thing ever dies.</p>
+        <h1>Contact</h1>
+			<ul>
+          <li>Email : yiping.huang@colorado.edu</li>
+          <li>Address : Gamow Tower F229 Department of Physics 390 UCB
+					University of Colorado Boulder, CO 80309-0390
+          </li>
+        </ul>
       </div>
     </div>
     <footer>
