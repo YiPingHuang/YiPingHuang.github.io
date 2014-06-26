@@ -2,9 +2,12 @@
 <html lang="">	
 <head>
 	<meta charset="utf-8"/>
-	<title>Some kind of notepad for myself...details about coding/physics/linux - Authors</title>	
+	<title>Add super user account in Ubuntu - Some kind of notepad for myself...details about coding/physics/linux</title>	
 	<meta name="author" content="Yi-Ping Huang">
 	
+
+	<meta name="description" content="Use su as usuall">
+
 
 	<link rel="top" href="#" /><link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,300italic,400italic,600italic|Source+Code+Pro' rel='stylesheet' type='text/css'></link>
 	<link rel="stylesheet" href="./theme/css/main.css" type="text/css" />
@@ -25,7 +28,37 @@
 	  <div class="wrapper">
 
 		  <div role="main" class="content">
-    <h1>Authors on Some kind of notepad for myself...details about coding/physics/linux</h1>        <li><a href="./author/yi-ping-huang.html">Yi-Ping Huang</a> (5)</li>
+	<article class="full">
+			
+		<h1>Add super user account in Ubuntu</h1>
+		
+<div class="metadata">
+  <time datetime="2014-06-23T00:00:00" pubdate>Mon 23 June 2014</time>
+    <address class="vcard author">
+      by <a class="url fn" href="./author/yi-ping-huang.html">Yi-Ping Huang</a>
+    </address>
+  in <a href="./category/linux.html">Linux</a>
+<p class="tags">tagged <a href="./tag/ubuntu-1404.html">Ubuntu-14.04</a>, <a href="./tag/linux.html">Linux</a></p></div>		
+		<p>Sometimes sudo might be hard to understand for me... su is an easier way for me
+to understand what I am doing...</p>
+<blockquote>
+<p>sudo passwd root</p>
+</blockquote>
+<p>Then, su is ready for using.</p>
+<p>I encounter this problem since I don't know where to set the variables for root.
+And using sudo is always confusing since its .bashrc file is obviously not the
+one for the user. When I try to build openmpi library by intel compiler, sudo
+cannot use the right variables. In order to install it under /opt with the right
+permission, setting up a su account is the most easy way that came to my mind...</p>	
+
+	</article>
+
+    <p>
+	<a href="https://twitter.com/share" class="twitter-share-button" data-via="" data-lang="en" data-size="large" data-related="">Tweet</a>
+	<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+	</p>
+
+
 		  </div>	
 		  
 		  <div class="sidebar">
@@ -34,7 +67,7 @@
 	          <h2>Categories</h2>
 	          <ul>
 	              <li ><a href="./category/books.html">Books</a></li>
-	              <li ><a href="./category/linux.html">Linux</a></li>
+	              <li class="active"><a href="./category/linux.html">Linux</a></li>
 	              <li ><a href="./category/physics.html">Physics</a></li>
 	              <li ><a href="./category/taocp.html">TAOCP</a></li>
 	              <li ><a href="./category/tutorial.html">Tutorial</a></li>

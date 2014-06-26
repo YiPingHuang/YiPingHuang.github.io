@@ -7,6 +7,12 @@ SITENAME = u'Some kind of notepad for myself...details about coding/physics/linu
 SITEURL = ''
 
 THEME='pelican-simplegrey'
+# for pure
+# COVER_IMG_URL='Hualien.jpg'
+# PROFILE_IMAGE_URL='Hualien.jpg'
+# TAGLINE=True
+# DISQUS_SITENAME=True
+# GOOGLE_ANALYTICS=True
 
 TIMEZONE = 'USA/Boulder'
 
