@@ -14,7 +14,7 @@
 <body>
   <div id="main">
     <header>
-		<div id="logo">
+      <div id="logo">
         <div id="logo_text">
           <!-- class="logo_colour", allows you to change the colour of the text -->
           <h1><a href="index.html">Yi-Ping<span class="logo_colour"> Huang</span></a></h1>
@@ -46,7 +46,7 @@
               <!-- <li><a href="#">Drop Down Five</a></li> -->
             </ul>
           </li>
-          <li><a href="#">Teaching</a>
+	  <li><a href="#">Teaching</a>
             <ul>
               <!-- <li><a href="#">Drop Down One</a></li> -->
               <li><a href="#">Drop Down Two</a>
@@ -63,31 +63,34 @@
               <!--<li><a href="#">Drop Down Five</a></li>-->
             </ul>
           </li>
-	  <li><a href="Blog/output/index.html"> Blog</a></li>
+	  <li><a href="/Blog/output/index.html"> Blog</a></li>
           <li><a href="links.html">Links</a></li>
           <li><a href="contact.html">Contact</a></li>
+          
         </ul>
       </nav>
     </header>
     <div id="site_content">
       <div id="sidebar_container">
-        <div style="text-align: right">
-          <img src="images/Bus_Light.jpg" width="350" height="450" alt="" />
-        </div>
+      	 <h1> Me at Italy.</h1>
+          <div style="text-align: center">
+          <img src="images/image78.jpg" width="450" height="340" alt="" /></div>
       </div>
       <div id="content">
-        <h1>Useful tools...</h1>
-        <p><a
-		href="http://nbviewer.ipython.org/gist/YiPingHuang/0fcf334d8d5396a37a9b">iPython</a>
-	whenever you need a Mexican hat!</p>
-	<p><a href="http://www.vim.org">Vim</a> is a good thing, maybe the best
-	of things, and no good thing ever dies.</p>
-      </div>
+        <h1>Welcome to my site.</h1>
+        <ul>
+          <li>I am a graduate student working in condensed matter theory. 
+          This site contains information about my interest and the works I have done.
+			 And it is still under construction.          
+          </li>
+        </ul>
+    	</div>
     </div>
     <footer>
       <p>Copyright &copy; photo_style_two | <a href="http://www.css3templates.co.uk">design from css3templates.co.uk</a></p>
     </footer>
   </div>
+  <p>&nbsp;</p>
   <!-- javascript at the bottom for fast page loading -->
   <script type="text/javascript" src="js/jquery.js"></script>
   <script type="text/javascript" src="js/jquery.easing-sooper.js"></script>
