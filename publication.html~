@@ -1,0 +1,137 @@
+<!DOCTYPE HTML>
+<html>
+<style type="text/css">
+/* animated spoiler CSS by Bloggersentral.com */
+.spoilerbutton {display:block;margin:5px 0;}
+.spoiler {overflow:hidden;background: #f5f5f5;}
+.spoiler > div {-webkit-transition: all 0.2s ease;-moz-transition: margin 0.2s ease;-o-transition: all 0.2s ease;transition: margin 0.2s ease;}
+.spoilerbutton[value="Description"] + .spoiler > div {margin-top:-200%;}
+.spoilerbutton[value="Hide"] + .spoiler {padding:5px;} 
+</style> 
+<head>
+  <title>Yi-Ping Huang</title>
+  <meta name="description" content="website description" />
+  <meta name="keywords" content="website keywords, website keywords" />
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
+  <!-- modernizr enables HTML5 elements and feature detects -->
+  <script type="text/javascript" src="js/modernizr-1.5.min.js"></script>
+</head>
+
+<body>
+  <div id="main">
+    <header>
+      <div id="logo">
+        <div id="logo_text">
+          <!-- class="logo_colour", allows you to change the colour of the text -->
+          <h1><a href="index.html">Yi-Ping<span class="logo_colour"> Huang</span></a></h1>
+          <h2>Simple site about physics and stuff...</h2>
+	  <h2>黃一平的個人網頁</h2>
+        </div>
+      </div>
+      <nav>
+        <ul class="sf-menu" id="nav">
+          <li class="selected"><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Me</a>
+            <ul>
+              	<li><a href="about.html">CV</a></li>
+              	<li><a href="publication.html">Publications</a></li>
+              	<li><a href="presentation.html">Presentations</a></li>
+            </ul>
+            </li>
+          <li><a href="gpicture.html">Research Interests</a>
+            <ul>
+              <li><a href="gpicture.html">Big Picture</a></li>
+              <li><a href="spicture.html">By Subject</a>
+                <ul>
+                  <li><a href="coldatom.html">Ultracold Atoms</a></li>
+                  <li><a href="qmag.html">Quantum Magnetism</a></li>
+                </ul>
+              </li>
+              <!-- <li><a href="#">Drop Down Three</a></li> -->
+              <!-- <li><a href="#">Drop Down Four</a></li> -->
+              <!-- <li><a href="#">Drop Down Five</a></li> -->
+            </ul>
+          </li>
+          <li><a href="links.html">Links</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="#">Teaching</a>
+            <ul>
+              <!-- <li><a href="#">Drop Down One</a></li> -->
+              <li><a href="#">Drop Down Two</a>
+                <ul>
+                  <li><a href="#">Sub Drop Down One</a></li>
+                  <!--<li><a href="#">Sub Drop Down Two</a></li>-->
+                  <!--<li><a href="#">Sub Drop Down Three</a></li>-->
+                  <!--<li><a href="#">Sub Drop Down Four</a></li>-->
+                  <!--<li><a href="#">Sub Drop Down Five</a></li>-->
+                </ul>
+              </li>
+              <!--<li><a href="#">Drop Down Three</a></li>-->
+              <!--<li><a href="#">Drop Down Four</a></li>-->
+              <!--<li><a href="#">Drop Down Five</a></li>-->
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <div id="site_content">
+      <div id="sidebar_container">
+       	<div style="text-align: center">
+          <img src="images/Hualien.jpg" width="450" height="600" alt="" />
+         </div>
+      </div>
+      <div id="content">
+        <h1>Selected publications</h1>
+	<h3>Complete list of publications can be found <a href="http://arxiv.org/a/huang_y_7">here</a></h3>
+			<ul>
+          <li>
+          <a href="http://dx.doi.org/10.1103/PhysRevA.80.053610">Quantum phase diagrams of fermionic dipolar gases in a planar array of one-dimensional tubes
+          </a> Yi-Ping Huang and Daw-Wei Wang, Phys. Rev. A 80, 053610 (2009)
+          	<input class="spoilerbutton" type="button" value="Description" onclick="this.value=this.value=='Description'?'Hide':'Description';">
+			 	<div class="spoiler"><div>
+          	<p>Dipolar gasses are unstable under head-to-tail configuration. To stablize dipolar gasses, different geometric arrangements are proposed.
+          	Trapping dipolar gasses in 1D tubes is one possibility.</p>
+          	<p><b>In this work, we generalize previous Luttinger liquid approach of two tubes into arbitrary number of tubes lying in the same plane with arbitrary dipole orientation.
+          	Further more, we are able to map out the complete phase diagram for different number of tubes under different dipole orientation.
+          	This work potentially can be realized in near future.</b></p>
+          	</div></div>
+          </li>
+          <li>
+			 <a href="http://dx.doi.org/10.1103/PhysRevLett.112.167203 ">Quantum Spin Ices and Topological Phases from Dipolar-Octupolar Doublets on the Pyrochlore Lattice
+          </a> Yi-Ping Huang, Gang Chen, and Michael Hermele, Phys. Rev. Lett. 112, 167203 (2014)-
+          The description is long...
+          	<input class="spoilerbutton" type="button" value="Description" onclick="this.value=this.value=='Description'?'Hide':'Description';">
+			 	<div class="spoiler"><div>
+          	<p>The study of different type of magnetic degree of freedom on frustrated pyrochlore lattice had a long history. At 2004, it is predicted that XXZ model 
+          	on pyrochlore lattice will leads to the exotic U(1) spin liquid( or later recognized as quantum spin ice(QSI)) phase. At that time, how to realize such model in nature is unclear.
+          	Recently, it is found that some f electron pyrochlore can be described by XXZ model with other terms allowed by space group symmetry, 
+          	and provides a possible routes to realize the exotic QSI phase.</p>
+		<p> Because of the discovery of topological insulator, scientists starts to think about the possibilities of exotic phases created by large spin-orbit interaction. And lots of works on iridates shown it is more than just hunting for topological insulater.</p>
+          	<p><b>In this work, we found, contrary to previous models, 
+          	another type of doublets(DO doublets in our paper) can realize models that is not discussed before at both itinerent limit and localized limit. 
+		The different transformation properties of DO doublets under space group transformation
+          	highly constrains the possible tight-binding model and exchange model.</i>.</b></p>
+          	<p><b>At itinerent limit, we construct the corresponding tight-binding model to fourth nearest-neighbor and found the possibility of strong topological insulator. At localized limit, the symmetry allowed exchange model is XYZ model. Studying this model by gMFT, we found two symmetry enriched topological order, dipolar QSI and octuoplar QSI, protected by space group symmetry.
+          	</b></p>
+          	</div></div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <footer>
+      <p>Copyright &copy; photo_style_two | <a href="http://www.css3templates.co.uk">design from css3templates.co.uk</a></p>
+    </footer>
+  </div>
+  <!-- javascript at the bottom for fast page loading -->
+  <script type="text/javascript" src="js/jquery.js"></script>
+  <script type="text/javascript" src="js/jquery.easing-sooper.js"></script>
+  <script type="text/javascript" src="js/jquery.sooperfish.js"></script>
+  <script type="text/javascript" src="js/image_fade.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $('ul.sf-menu').sooperfish();
+    });
+  </script>
+</body>
+</html>
