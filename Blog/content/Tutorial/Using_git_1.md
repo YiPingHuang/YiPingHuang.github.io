@@ -17,3 +17,8 @@ will create a new branch according to the current master branch.
 To merge the new branch with the master branch
 >git merge new_branch_name
 
+To remove a remote branch
+>git push name_of_remote :branch_to_be_removed
+
+To remove local branch
+>git branch -d name_of_branch
