@@ -29,29 +29,70 @@
 
 
       <article>
-        <h1><a href="./git-tutorial-1.html">Git- the version control tool</a></h1>
-        <p>We can use</p>
-<blockquote>
-<p>git branch</p>
-</blockquote>
-<p>to check how many branches in the local directory.</p>
-<p>To branch out,</p>
-<blockquote>
-<p>git branch new_branch_name</p>
-</blockquote>
-<p>will create a new branch according to the current master branch.</p>
-<p>To merge the new branch with the master branch</p>
-<blockquote>
-<p>git merge new_branch_name</p>
-</blockquote>
-<p>To remove a remote branch</p>
-<blockquote>
-<p>git push name_of_remote :branch_to_be_removed</p>
-</blockquote>
-<p>To remove local branch</p>
-<blockquote>
-<p>git branch -d name_of_branch</p>
-</blockquote>
+        <h1><a href="./Permutation algorithm 1 in TAOCP vol.4.html">Permutation(1)</a></h1>
+        <p><strong>Reference:</strong> <a href="A book about classical computer science.html">TAOCP</a> vol.4</p>
+<p>The idea is </p>
+<ul>
+<li>
+<p>First generate $(n-1)!$ permutation of the $n-1$ elements. And arrange
+permutations as a row where the adjacent permutations are related by one
+adjacent transposition.
+$123\quad 132\quad 312\quad 321\quad 231\quad 213$</p>
+</li>
+<li>
+<p>For each permutation, the element of row, we put the $n$-th element in every
+possible position from the end and generate a column.
+\begin{array}{cccc}
+\mathbf{123\underline{4}} &amp;\mathbf{132\underline{4}} &amp;\mathbf{312\underline{4}} &amp;...\\
+12\underline{4}3 &amp;13\underline{4}2 &amp;31\underline{4}2 &amp;...\\
+1\underline{4}23 &amp;1\underline{4}32 &amp;3\underline{4}12 &amp;...\\
+\mathbf{\underline{4}123} &amp;\mathbf{\underline{4}132}
+&amp;\mathbf{\underline{4}312} &amp;...
+\end{array}
+Within each column, adjacent permutations are also related by one adjacent transposition.
+Thus we form a grid of square lattice that each site is related to its
+nearest-neighbor by one transposition. However, not all transposition are
+adjacent transposition, only the elements on the top and bottom rows are related
+by adjacent transposition between columns. We can
+transverse all permutations by adjacent transpositions by following scheme:
+First transverse first column by performing adjacent transpositions
+successively. Then, go to the second column horizontally by one adjacent
+transposition. By performing successive adjacent transpositions, we will reach the top row
+of the second column. Again we can go to the third column horizontally by one
+adjacent transposition. Continue this process, we are able to transverse all
+permutations with adjacent transpositions only!!</p>
+</li>
+</ul><script type= "text/javascript">
+    if (!document.getElementById('mathjaxscript_pelican_#%@#$@#')) {
+        var mathjaxscript = document.createElement('script');
+        mathjaxscript.id = 'mathjaxscript_pelican_#%@#$@#';
+        mathjaxscript.type = 'text/javascript';
+        mathjaxscript.src = 'https:' == document.location.protocol
+                ? 'https://c328740.ssl.cf1.rackcdn.com/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'
+                : 'http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML';
+        mathjaxscript[(window.opera ? "innerHTML" : "text")] =
+            "MathJax.Hub.Config({" +
+            "    config: ['MMLorHTML.js']," +
+            "    TeX: { extensions: ['AMSmath.js','AMSsymbols.js','noErrors.js','noUndefined.js'], equationNumbers: { autoNumber: 'AMS' } }," +
+            "    jax: ['input/TeX','input/MathML','output/HTML-CSS']," +
+            "    extensions: ['tex2jax.js','mml2jax.js','MathMenu.js','MathZoom.js']," +
+            "    displayAlign: 'center'," +
+            "    displayIndent: '0em'," +
+            "    showMathMenu: true," +
+            "    tex2jax: { " +
+            "        inlineMath: [ ['$','$'] ], " +
+            "        displayMath: [ ['$$','$$'] ]," +
+            "        processEscapes: true," +
+            "        preview: 'TeX'," +
+            "    }, " +
+            "    'HTML-CSS': { " +
+            "        styles: { '.MathJax_Display, .MathJax .mo, .MathJax .mi, .MathJax .mn': {color: 'black ! important'} }" +
+            "    } " +
+            "}); ";
+        (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
+    }
+</script>
+
       </article>
 
       <hr />
@@ -60,6 +101,12 @@
           <h3>Last posts</h3>
           <ol class="archive">
     
+
+
+      <li>
+<a href="./git-tutorial-1.html" rel="bookmark" title="Permalink to Git- the version control tool">Git- the version control tool</a>
+  <time datetime="2014-06-25T00:00:00" pubdate>Wed 25 June 2014</time>
+<p class="tags">tags: <a href="./tag/git.html">git</a></p></a>      </li>
 
 
       <li>
@@ -86,10 +133,6 @@
 <p class="tags">tags: <a href="./tag/books.html">Books</a><a href="./tag/coding.html">Coding</a></p></a>      </li>
 
 
-      <li>
-<a href="./Using-Pelican-Ubuntu-14.04.html" rel="bookmark" title="Permalink to Using pelican for Blog">Using pelican for Blog</a>
-  <time datetime="2014-05-29T00:00:00" pubdate>Thu 29 May 2014</time>
-<p class="tags">tags: <a href="./tag/pelican.html">Pelican</a><a href="./tag/ubuntu-1404.html">Ubuntu-14.04</a><a href="./tag/tutorial.html">Tutorial</a></p></a>      </li>
 
 
           </ol>
