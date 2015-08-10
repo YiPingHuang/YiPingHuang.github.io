@@ -1,6 +1,13 @@
 <!DOCTYPE HTML>
 <html>
-
+<style type="text/css">
+/* animated spoiler CSS by Bloggersentral.com */
+.spoilerbutton {display:block;margin:5px 0;}
+.spoiler {overflow:hidden;background: #f5f5f5;}
+.spoiler > div {-webkit-transition: all 0.2s ease;-moz-transition: margin 0.2s ease;-o-transition: all 0.2s ease;transition: margin 0.2s ease;}
+.spoilerbutton[value="Description"] + .spoiler > div {margin-top:-200%;}
+.spoilerbutton[value="Hide"] + .spoiler {padding:5px;} 
+</style> 
 <head>
   <title>Yi-Ping Huang</title>
   <meta name="description" content="website description" />
@@ -14,7 +21,7 @@
 <body>
   <div id="main">
     <header>
- 		<div id="logo">
+      <div id="logo">
         <div id="logo_text">
           <!-- class="logo_colour", allows you to change the colour of the text -->
           <h1><a href="index.html">Yi-Ping<span class="logo_colour"> Huang</span></a></h1>
@@ -71,34 +78,19 @@
     </header>
     <div id="site_content">
       <div id="sidebar_container">
-        <h1> </h1>
-	<h1> </h1>
-          <div style="text-align: center">
-          <img src="images/Me.jpg" width="450" height="340" alt="" /></div>
+       	<div style="text-align: center">
+          <img src="images/Hualien.jpg" width="450" height="600" alt="" />
+         </div>
       </div>
       <div id="content">
-        <h1>Super short CV</h1>
-        <p> I am interested in theoretical condensed matter physics.
-        I am currently focusing on understanding quantum emergent phenomena due to composite effects
-	that could lead to exotic orders in nature. These effects could came from a wide range of systems. They
-	could came from strong spin-orbit coupling system with different lattice structure in 
-	solid state materials such as transition metal oxides and rare-earth oxides or from exotic emergent interactions in ultracold atoms.</p>
-        <h1> Education</h1>
-        <ul>
-          <li>2012-present : PhD Candidate in Physics - University of Colorado at Boulder, USA
-          <br>Research Advisor: Prof. Dr. <a href="http://spot.colorado.edu/~hermele/">Michael Hermele</a><br></li>
-          <li>2010-2012 : Master of science in Physics - University of Colorado at Boulder</li>
-          <li>2004-2008 : Bachelar of Science in Physics - National Tsing-Hua University in Taiwan
-          <br>Research Advisor: Prof. Dr. <a href="http://www.phys.nthu.edu.tw/e_teacher/dwwang.html">Daw-Wei Wang</a><br></li>
+        <h1>Poster</h1>
+			<ul>
+          <li><a href="DO.pdf">Quantum spin ices and topological phases from dipolar-octupolar doublets on the pyrochlore lattice</a></li>
         </ul>
-        <p> Short CV is <a href="Yi-Ping_CV_short.pdf">here</a>.
-        <!-- <p> Long version of my CV is <a href="CV.pdf">here</a>. 
-        List of my publication is <a href="publication.html">here</a>. 
-        List of my presentation is <a href="presentation.html">here</a>.</p> -->
       </div>
     </div>
     <footer>
-     <p>Copyright &copy; photo_style_two | <a href="http://www.css3templates.co.uk">design from css3templates.co.uk</a></p>
+      <p>Copyright &copy; photo_style_two | <a href="http://www.css3templates.co.uk">design from css3templates.co.uk</a></p>
     </footer>
   </div>
   <!-- javascript at the bottom for fast page loading -->
