@@ -14,7 +14,7 @@ THEME='pelican-simplegrey'
 # DISQUS_SITENAME=True
 # GOOGLE_ANALYTICS=True
 
-TIMEZONE = 'USA/Boulder'
+#TIMEZONE = 'USA/Boulder'
 
 DEFAULT_LANG = u'en'
 
