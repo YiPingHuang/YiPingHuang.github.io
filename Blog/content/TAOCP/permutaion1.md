@@ -15,13 +15,13 @@ $123\quad 132\quad 312\quad 321\quad 231\quad 213$
 
 * For each permutation, the element of row, we put the $n$-th element in every
 possible position from the end and generate a column.
-\\begin{array}{cccc}
-\\mathbf{123\underline{4}} &\\mathbf{132\underline{4}} &\\mathbf{312\underline{4}} &...\\\\
-12\underline{4}3 &13\underline{4}2 &31\underline{4}2 &...\\\\
-1\underline{4}23 &1\underline{4}32 &3\underline{4}12 &...\\\\
-\\mathbf{\underline{4}123} &\\mathbf{\underline{4}132}
-&\\mathbf{\underline{4}312} &...
-\\end{array}
+\begin{array}{cccc}
+\mathbf{123\underline{4}} &\mathbf{132\underline{4}} &\mathbf{312\underline{4}} &...\\
+12\underline{4}3 &13\underline{4}2 &31\underline{4}2 &...\\
+1\underline{4}23 &1\underline{4}32 &3\underline{4}12 &...\\
+\mathbf{\underline{4}123} &\mathbf{\underline{4}132}
+&\mathbf{\underline{4}312} &...
+\end{array}
 Within each column, adjacent permutations are also related by one adjacent transposition.
 Thus we form a grid of square lattice that each site is related to its
 nearest-neighbor by one transposition. However, not all transposition are

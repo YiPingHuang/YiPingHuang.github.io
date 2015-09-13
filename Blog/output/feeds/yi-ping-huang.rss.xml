@@ -11,13 +11,13 @@ adjacent transposition.
 &lt;li&gt;
 &lt;p&gt;For each permutation, the element of row, we put the &lt;span class="math"&gt;\(n\)&lt;/span&gt;-th element in every
 possible position from the end and generate a column.
-\&lt;div class="math"&gt;\begin{array}{cccc}
-\\mathbf{123\underline{4}} &amp;amp;\\mathbf{132\underline{4}} &amp;amp;\\mathbf{312\underline{4}} &amp;amp;...\\\\
-12\underline{4}3 &amp;amp;13\underline{4}2 &amp;amp;31\underline{4}2 &amp;amp;...\\\\
-1\underline{4}23 &amp;amp;1\underline{4}32 &amp;amp;3\underline{4}12 &amp;amp;...\\\\
-\\mathbf{\underline{4}123} &amp;amp;\\mathbf{\underline{4}132}
-&amp;amp;\\mathbf{\underline{4}312} &amp;amp;...
-\\end{array}&lt;/div&gt;
+&lt;div class="math"&gt;\begin{array}{cccc}
+\mathbf{123\underline{4}} &amp;amp;\mathbf{132\underline{4}} &amp;amp;\mathbf{312\underline{4}} &amp;amp;...\\
+12\underline{4}3 &amp;amp;13\underline{4}2 &amp;amp;31\underline{4}2 &amp;amp;...\\
+1\underline{4}23 &amp;amp;1\underline{4}32 &amp;amp;3\underline{4}12 &amp;amp;...\\
+\mathbf{\underline{4}123} &amp;amp;\mathbf{\underline{4}132}
+&amp;amp;\mathbf{\underline{4}312} &amp;amp;...
+\end{array}&lt;/div&gt;
 Within each column, adjacent permutations are also related by one adjacent transposition.
 Thus we form a grid of square lattice that each site is related to its
 nearest-neighbor by one transposition. However, not all transposition are
@@ -219,21 +219,21 @@ stands for the word permutations.&lt;/p&gt;
 &lt;p&gt;Perm can be considered as a &lt;em&gt;rearrangement&lt;/em&gt; or &lt;em&gt;renaming&lt;/em&gt; of a series of
 objects. Suppose we put five objects &lt;span class="math"&gt;\(a,b,c,d\)&lt;/span&gt; in a straight line. And the perms
 which change the ordering into &lt;span class="math"&gt;\(b,a,d,c\)&lt;/span&gt; can be denoted as
-\&lt;/p&gt;
+&lt;/p&gt;
 &lt;div class="math"&gt;\begin{equation}
-\\left(
-\\begin{array}{cccc}
-a &amp;amp;b &amp;amp;c &amp;amp;d\\\\
+\left(
+\begin{array}{cccc}
+a &amp;amp;b &amp;amp;c &amp;amp;d\\
 b &amp;amp;a &amp;amp;d &amp;amp;c
-\\end{array}
-\\right)\\equiv
-\\left(
-\\begin{array}{cccc}
-b &amp;amp;a &amp;amp;c &amp;amp;d\\\\
+\end{array}
+\right)\equiv
+\left(
+\begin{array}{cccc}
+b &amp;amp;a &amp;amp;c &amp;amp;d\\
 a &amp;amp;b &amp;amp;d &amp;amp;c
-\\end{array}
-\\right)\\text{.}
-\\end{equation}&lt;/div&gt;
+\end{array}
+\right)\text{.}
+\end{equation}&lt;/div&gt;
 &lt;p&gt;Note, the expression for linear representation is not unique as we show in the
 above equation.&lt;/p&gt;
 &lt;h2 id="cyclic-representation"&gt;Cyclic representation&lt;/h2&gt;

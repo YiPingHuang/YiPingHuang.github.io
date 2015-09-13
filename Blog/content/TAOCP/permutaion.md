@@ -24,20 +24,20 @@ Perms have several different representations.
 Perm can be considered as a _rearrangement_ or _renaming_ of a series of
 objects. Suppose we put five objects $a,b,c,d$ in a straight line. And the perms
 which change the ordering into $b,a,d,c$ can be denoted as
-\\begin{equation}
-\\left(
-\\begin{array}{cccc}
-a &b &c &d\\\\
+\begin{equation}
+\left(
+\begin{array}{cccc}
+a &b &c &d\\
 b &a &d &c
-\\end{array}
-\\right)\\equiv
-\\left(
-\\begin{array}{cccc}
-b &a &c &d\\\\
+\end{array}
+\right)\equiv
+\left(
+\begin{array}{cccc}
+b &a &c &d\\
 a &b &d &c
-\\end{array}
-\\right)\\text{.}
-\\end{equation}
+\end{array}
+\right)\text{.}
+\end{equation}
 
 Note, the expression for linear representation is not unique as we show in the
 above equation.
