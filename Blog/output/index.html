@@ -34,21 +34,21 @@
 <p>The idea is </p>
 <ul>
 <li>
-<p>First generate $(n-1)!$ permutation of the $n-1$ elements. And arrange
+<p>First generate <span class="math">\((n-1)!\)</span> permutation of the <span class="math">\(n-1\)</span> elements. And arrange
 permutations as a row where the adjacent permutations are related by one
 adjacent transposition.
-$123\quad 132\quad 312\quad 321\quad 231\quad 213$</p>
+<span class="math">\(123\quad 132\quad 312\quad 321\quad 231\quad 213\)</span></p>
 </li>
 <li>
-<p>For each permutation, the element of row, we put the $n$-th element in every
+<p>For each permutation, the element of row, we put the <span class="math">\(n\)</span>-th element in every
 possible position from the end and generate a column.
-\begin{array}{cccc}
-\mathbf{123\underline{4}} &amp;\mathbf{132\underline{4}} &amp;\mathbf{312\underline{4}} &amp;...\\
-12\underline{4}3 &amp;13\underline{4}2 &amp;31\underline{4}2 &amp;...\\
-1\underline{4}23 &amp;1\underline{4}32 &amp;3\underline{4}12 &amp;...\\
-\mathbf{\underline{4}123} &amp;\mathbf{\underline{4}132}
-&amp;\mathbf{\underline{4}312} &amp;...
-\end{array}
+\<div class="math">\begin{array}{cccc}
+\\mathbf{123\underline{4}} &amp;\\mathbf{132\underline{4}} &amp;\\mathbf{312\underline{4}} &amp;...\\\\
+12\underline{4}3 &amp;13\underline{4}2 &amp;31\underline{4}2 &amp;...\\\\
+1\underline{4}23 &amp;1\underline{4}32 &amp;3\underline{4}12 &amp;...\\\\
+\\mathbf{\underline{4}123} &amp;\\mathbf{\underline{4}132}
+&amp;\\mathbf{\underline{4}312} &amp;...
+\\end{array}</div>
 Within each column, adjacent permutations are also related by one adjacent transposition.
 Thus we form a grid of square lattice that each site is related to its
 nearest-neighbor by one transposition. However, not all transposition are
@@ -62,37 +62,63 @@ of the second column. Again we can go to the third column horizontally by one
 adjacent transposition. Continue this process, we are able to transverse all
 permutations with adjacent transpositions only!!</p>
 </li>
-</ul><script type= "text/javascript">
-    if (!document.getElementById('mathjaxscript_pelican_#%@#$@#')) {
-        var mathjaxscript = document.createElement('script');
-        mathjaxscript.id = 'mathjaxscript_pelican_#%@#$@#';
-        mathjaxscript.type = 'text/javascript';
-        mathjaxscript.src = 'https:' == document.location.protocol
-                ? 'https://c328740.ssl.cf1.rackcdn.com/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'
-                : 'http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML';
-        mathjaxscript[(window.opera ? "innerHTML" : "text")] =
-            "MathJax.Hub.Config({" +
-            "    config: ['MMLorHTML.js']," +
-            "    TeX: { extensions: ['AMSmath.js','AMSsymbols.js','noErrors.js','noUndefined.js'], equationNumbers: { autoNumber: 'AMS' } }," +
-            "    jax: ['input/TeX','input/MathML','output/HTML-CSS']," +
-            "    extensions: ['tex2jax.js','mml2jax.js','MathMenu.js','MathZoom.js']," +
-            "    displayAlign: 'center'," +
-            "    displayIndent: '0em'," +
-            "    showMathMenu: true," +
-            "    tex2jax: { " +
-            "        inlineMath: [ ['$','$'] ], " +
-            "        displayMath: [ ['$$','$$'] ]," +
-            "        processEscapes: true," +
-            "        preview: 'TeX'," +
-            "    }, " +
-            "    'HTML-CSS': { " +
-            "        styles: { '.MathJax_Display, .MathJax .mo, .MathJax .mi, .MathJax .mn': {color: 'black ! important'} }" +
-            "    } " +
-            "}); ";
-        (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
-    }
-</script>
+</ul>
+<script type="text/javascript">if (!document.getElementById('mathjaxscript_pelican_#%@#$@#')) {
+    var align = "center",
+        indent = "0em",
+        linebreak = "false";
 
+    if (false) {
+        align = (screen.width < 768) ? "left" : align;
+        indent = (screen.width < 768) ? "0em" : indent;
+        linebreak = (screen.width < 768) ? 'true' : linebreak;
+    }
+    
+    var mathjaxscript = document.createElement('script');
+    var location_protocol = (false) ? 'https' : document.location.protocol;
+    if (location_protocol !== 'http' && location_protocol !== 'https') location_protocol = 'https:';
+    mathjaxscript.id = 'mathjaxscript_pelican_#%@#$@#';
+    mathjaxscript.type = 'text/javascript'; 
+    mathjaxscript.src = location_protocol + '//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML';
+    mathjaxscript[(window.opera ? "innerHTML" : "text")] =
+        "MathJax.Hub.Config({" +
+        "    config: ['MMLorHTML.js']," +
+        "    TeX: { extensions: ['AMSmath.js','AMSsymbols.js','noErrors.js','noUndefined.js'], equationNumbers: { autoNumber: 'AMS' } }," +
+        "    jax: ['input/TeX','input/MathML','output/HTML-CSS']," +
+        "    extensions: ['tex2jax.js','mml2jax.js','MathMenu.js','MathZoom.js']," +
+        "    displayAlign: '"+ align +"'," +
+        "    displayIndent: '"+ indent +"'," +
+        "    showMathMenu: true," +
+        "    tex2jax: { " +
+        "        inlineMath: [ ['\\\\(','\\\\)'] ], " +
+        "        displayMath: [ ['$$','$$'] ]," +
+        "        processEscapes: true," +
+        "        preview: 'TeX'," +
+        "    }, " +
+        "    'HTML-CSS': { " +
+        "        styles: { '.MathJax_Display, .MathJax .mo, .MathJax .mi, .MathJax .mn': {color: 'inherit ! important'} }," +
+        "        linebreaks: { automatic: "+ linebreak +", width: '90% container' }," +
+        "    }, " +
+        "}); " +
+        "if ('default' !== 'default') {" +
+            "MathJax.Hub.Register.StartupHook('HTML-CSS Jax Ready',function () {" +
+                "var VARIANT = MathJax.OutputJax['HTML-CSS'].FONTDATA.VARIANT;" +
+                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
+                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
+                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
+                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
+            "});" +
+            "MathJax.Hub.Register.StartupHook('SVG Jax Ready',function () {" +
+                "var VARIANT = MathJax.OutputJax.SVG.FONTDATA.VARIANT;" +
+                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
+                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
+                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
+                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
+            "});" +
+        "}";
+    (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
+}
+</script>
       </article>
 
       <hr />
@@ -131,8 +157,6 @@ permutations with adjacent transpositions only!!</p>
 <a href="./A book about classical computer science.html" rel="bookmark" title="Permalink to The Art Of Computer Programming(TAOCP)">The Art Of Computer Programming(TAOCP)</a>
   <time datetime="2014-05-31T00:00:00+00:00" pubdate>Sat 31 May 2014</time>
 <p class="tags">tags: <a href="./tag/books.html">Books</a><a href="./tag/coding.html">Coding</a></p></a>      </li>
-
-
 
 
           </ol>

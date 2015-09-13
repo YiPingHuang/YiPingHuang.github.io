@@ -39,8 +39,9 @@ DEFAULT_PAGINATION = 10
 RELATIVE_URLS = True
 
 # Plugins
-PLUGIN_PATH='/home/yi-ping/virtualenvs/pelican/pelican-plugins'
+PLUGIN_PATH=['/home/yi-ping/pelican-plugins']
 PLUGINS =['render_math','liquid_tags.img', 'liquid_tags.video', 'liquid_tags.youtube', 'liquid_tags.vimeo','liquid_tags.include_code', 'liquid_tags.notebook']
+MD_EXTENSIONS=['codehilite','extra','smarty','toc']
 
 # For ipython
 EXTRA_HEADER=open('_nb_header.html').read().decode('utf-8')
