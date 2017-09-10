@@ -1,0 +1,103 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <title>Yi-Ping Huang</title>
+  <meta name="description" content="website description" />
+  <meta name="keywords" content="website keywords, website keywords" />
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
+  <!-- modernizr enables HTML5 elements and feature detects -->
+  <script type="text/javascript" src="js/modernizr-1.5.min.js"></script>
+</head>
+
+<body>
+  <div id="main">
+    <header>
+ 		<div id="logo">
+        <div id="logo_text">
+          <!-- class="logo_colour", allows you to change the colour of the text -->
+          <h1><a href="index.html">Yi-Ping<span class="logo_colour"> Huang</span></a></h1>
+          <h2>Simple site about physics and stuff...</h2>
+	  <h2>黃一平的個人網頁</h2>
+        </div>
+      </div>
+      <nav>
+        <ul class="sf-menu" id="nav">
+          <li class="selected"><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Me</a>
+            <ul>
+              	<li><a href="about.html">CV</a></li>
+              	<li><a href="publication.html">Publications</a></li>
+              	<li><a href="presentation.html">Presentations</a></li>
+            </ul>
+            </li>
+          <li><a href="gpicture.html">Research Interests</a>
+            <ul>
+              <li><a href="gpicture.html">Big Picture</a></li>
+              <li><a href="spicture.html">By Subject</a>
+                <ul>
+                  <li><a href="coldatom.html">Ultracold Atoms</a></li>
+                  <li><a href="qmag.html">Quantum Magnetism</a></li>
+                </ul>
+              </li>
+              <!-- <li><a href="#">Drop Down Three</a></li> -->
+              <!-- <li><a href="#">Drop Down Four</a></li> -->
+              <!-- <li><a href="#">Drop Down Five</a></li> -->
+            </ul>
+          </li>
+          <li><a href="Blog/output/index.html">Blog</a></li>
+          <li><a href="links.html">Links</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="#">Teaching</a>
+            <ul>
+              <!-- <li><a href="#">Drop Down One</a></li> -->
+              <li><a href="#">Drop Down Two</a>
+                <ul>
+                  <li><a href="#">Sub Drop Down One</a></li>
+                  <!--<li><a href="#">Sub Drop Down Two</a></li>-->
+                  <!--<li><a href="#">Sub Drop Down Three</a></li>-->
+                  <!--<li><a href="#">Sub Drop Down Four</a></li>-->
+                  <!--<li><a href="#">Sub Drop Down Five</a></li>-->
+                </ul>
+              </li>
+              <!--<li><a href="#">Drop Down Three</a></li>-->
+              <!--<li><a href="#">Drop Down Four</a></li>-->
+              <!--<li><a href="#">Drop Down Five</a></li>-->
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <div id="site_content">
+      <div id="sidebar_container">
+        <div style="text-align: center">
+          <img src="images/dipole_chain_phase_diagram.png" width="400" height="450" alt="" />
+        </div>
+      </div>
+      <div id="content">
+        <h1>Ultracold dipolar fermions</h1>
+        <p> Dipolar gasses are unstable under head-to-tail configuration. To stablize dipolar gasses, different geometric arrangements are proposed.
+          	Trapping dipolar gasses in 1D tubes is one possibility.</p>
+        <p> In this work, we generalize previous Luttinger liquid approach of two tubes into arbitrary number of tubes lying in the same plane with arbitrary dipole orientation.
+          	Further more, we are able to map out the complete phase diagram for different number of tubes under different dipole orientation.
+          	This work potentially can be realized in near future. 
+          	This work is published <a href="http://dx.doi.org/10.1103/PhysRevA.80.053610">here</a></p>
+      </div>
+    </div>
+    <footer>
+     <p>Copyright &copy; photo_style_two | <a href="http://www.css3templates.co.uk">design from css3templates.co.uk</a></p>
+    </footer>
+  </div>
+  <!-- javascript at the bottom for fast page loading -->
+  <script type="text/javascript" src="js/jquery.js"></script>
+  <script type="text/javascript" src="js/jquery.easing-sooper.js"></script>
+  <script type="text/javascript" src="js/jquery.sooperfish.js"></script>
+  <script type="text/javascript" src="js/image_fade.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $('ul.sf-menu').sooperfish();
+    });
+  </script>
+</body>
+</html>

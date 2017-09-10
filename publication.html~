@@ -84,10 +84,24 @@
       </div>
       <div id="content">
         <h1>Selected publications</h1>
-	<h3>Complete list of publications can be found <a href="http://arxiv.org/a/huang_y_7">here</a></h3>
+	<h3>Complete list of publications can be found at
+	<a href="https://scholar.google.com/citations?user=bUAikIoAAAAJ&hl=en">google scholar</a></h3>
+	<!-- <a href="http://arxiv.org/a/huang_y_7">here</a></h3> -->
 	<!-- <h4>In the description, no reference will be mentioned due to the lack of spacing. Checking the paper for more complete references.</h4>-->
 	<ul>
-
+          <li>
+			 <a href="https://arxiv.org/abs/1609.08617">Theory of quantum kagome ice and vison zero modes
+          </a> <b>Yi-Ping Huang</b> and Michael Hermele, arXiv:1609.08617(2016)
+          	<input class="spoilerbutton" type="button" value="Description" onclick="this.value=this.value=='Description'?'Hide':'Description';">
+			 	<div class="spoiler"><div>
+          	<p>We derive an effective \(Z_2\) gauge theory to describe the quantum kagome ice (QKI) state that has been observed by Carrasquilla et. al. 
+          	in Monte Carlo studies of the \(S=1/2\) kagome XYZ model in a Zeeman field. The numerical results on QKI are consistent with, but do not confirm 
+          	or rule out, the hypothesis that it is a \(Z_2\) spin liquid. Our effective theory allows us to explore this hypothesis and make a striking prediction 
+          	for future numerical studies, namely that symmetry-protected vison zero modes arise at lattice disclination defects, leading to a Curie defect 
+          	term in the spin susceptibility, and a characteristic \((N_{dis}−1)\ln 2\) contribution to the entropy, where \(N_{dis}\) is the number of disclinations. 
+          	Only the \(Z_2\) Ising symmetry is required to protect the vison zero modes. This is remarkable because a unitary \(Z_2\) symmetry cannot be responsible 
+          	for symmetry-protected degeneracies of local degrees of freedom. We also discuss other signatures of symmetry fractionalization in the \(Z_2\) spin liquid, 
+          	and phase transitions out of the \(Z_2\) spin liquid to nearby ordered phases. </p>
           <li>
 			 <a href="http://dx.doi.org/10.1103/PhysRevLett.112.167203 ">Quantum Spin Ices and Topological Phases from Dipolar-Octupolar Doublets on the Pyrochlore Lattice
           </a> <b>Yi-Ping Huang</b>, Gang Chen, and Michael Hermele, Phys. Rev. Lett. 112, 167203 (2014)

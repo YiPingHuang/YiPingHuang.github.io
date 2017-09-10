@@ -46,6 +46,7 @@
               <!-- <li><a href="#">Drop Down Five</a></li> -->
             </ul>
           </li>
+	  <li><a href="Blog/output/index.html">Blog</a></li>
           <li><a href="links.html">Links</a></li>
           <li><a href="contact.html">Contact</a></li>
           <li><a href="#">Teaching</a>
@@ -88,6 +89,8 @@
 	Finding spin-orbit coupling provides a chance to realize more constrained model under space group symmetry and further 
 	helps realizing the exotic topological insulator and topological order is exciting!
         </p>
+        <p>In addition to theory oriented motivations, I also like to understand what happened in physical reality. 
+        I would like to develop the ability to identify interesting physics also from experimental side and find the corresponding theory.</p>
       </div>
     </div>
     <footer>
