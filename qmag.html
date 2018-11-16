@@ -153,50 +153,48 @@
         <p>We study the classification of symmetry-protected topological (SPT) phases with crystalline symmetry (cSPT phases). Focusing on bosonic cSPT phases in two and three dimensions, we introduce a simple family of cSPT states, where the system is comprised of decoupled lower-dimensional building blocks that are themselves SPT states. We introduce a procedure to classify these block states, which surprisingly reproduces a classification of cSPT phases recently obtained by Thorngren and Else (arXiv:1612.00846) using very different methods, for all wallpaper and space groups. The explicit constructions underlying our results clarify the physical properties of the phases classified by Thorngren and Else, and expose additional structure in the classification. Moreover, the states we classify can be completely characterized by point-group SPT (pgSPT) invariants and related weak pgSPT invariants that we introduce. In many cases, the weak invariants can be visualized in terms of translation-symmetric stacking of lower-dimensional pgSPT states. We apply our classification to propose a Lieb-Shultz-Mattis–type constraint for two-dimensional spin systems with only crystalline symmetry, and establish this constraint by a dimensional reduction argument. Finally, the surprising matching with the Thorngren-Else classification leads us to conjecture that all SPT phases protected only by crystalline symmetry can be built from lower-dimensional blocks of invertible topological states. We argue that this conjecture holds if we make a certain physically reasonable but unproven assumption.
         
         This work is published <a href="https://journals.aps.org/prb/abstract/10.1103/PhysRevB.96.205106">here</a>.</p>
+        
+      <p> There is an old saying : 醉翁之意不在酒，在乎山水之間也。 In describe the following scenario. During the hiking, tasting the good wine in the mountain is not the goal. Instead the true purpose is to savour the beautiful view of the mountains.</p>
         <div style="text-align: center">
         <img src="images/topo_charge.png" width="400" height="280" alt="" />
         </div>
 
-      <!--<div id="sidebar_container">
-      <div style="text-align: center">
-        <img src="images/DO_doublet.png" width="378" height="448" alt="" /></div>
-        <p>At the localized limit, we got a nearest-neighbor coupled XYZ exchange model on pyrochlore lattice. Because of the special transformation properties under site symmetry,
-        the model is surprisingly simple. A large portion of the parameter space had no sign problem and can be studied with large scale quantum Monde Carlo. Besides, our model
-        provides a "quasi-realistic" way to realize onsite \(Z_2\times Z_2\) symmetry for nearest-neighbor exchange model on pyrochlore lattice.
-        The model could realize 3+1D symmetry enriched topological order with two distict topological order (dipolar quantum spin ice and octupolar quantum spin ice) protected by space
-         group symmetry.</p>
-         <hr>
-         <h1></h1>
-      <div style="text-align: center">
-        <img src="images/cluster.png" width="350" height="340" alt="" /></div>
       <hr>
-      </div>
-      <div id="content">
-        <h1>Quantum magnetism with large spin-orbit coupling</h1>
-        <p> 3d transition metal oxides provide various exotic phenomena of correlated electrons, i.e. Metal-insulator transition, superconductivity, etc. The competing effect between localized and itinerant physics made it an active research area in last fifty years. On the other hand, the discovery of topological insulator ignites the investigation of the new physics brings up by spin-orbit coupling. The interplay between correlation and spin-orbit coupling can provide the possibility to realize new phase of matter.
-        </p>
-        <h2>Ions with large spin-orbit coupling on pyrochlore lattice</h2>
-        <p> We study a family of materials of 5d or 4f ions on pyrochlore lattice. Considering both spin-orbit coupling and crystal field splitting, a type of Kramers doublets transform according to two distinct 1-dimensional irreducible representation under the \(D_{3d}\) site symmetry can be realized.
-        We dub these doublets dipolar-octupolar(DO) doublets because the pseudo-spin operator formed by those doublets transform in a non-trivial way under symmetry operation.
-        This work is published <a href="http://dx.doi.org/10.1103/PhysRevLett.112.167203">here</a>. </p>
-        
-        <p>The non-trivial properties under site symmetry combined with the pyrochlore space group leads to two new low energy effective models at itenerent limit and localized limit.
-        At itenerent limit, the model develop a "Dirac point like" band touching at W point till fourth nearest-neighbor hopping. By considering \(\mathbf{k}\cdot\mathbf{p}\) theory and construct the
-        fourth nearest-neighbor hopping model, we prove the W point degneracy is not protected by space group. Once generic fourth nearest-neighbor hopping is included, the 
-        W point degeneracy will be removed. And leads to a strong topological insulator.</p>
-        <hr>
-        <h2>High energy Raman signal in \(Sr_2IrO_4\)</h2>
-        <p>Spin-orbit interaction in \(Sr_2IrO_4\) leads to the realization of the \(J_{\mathrm{eff}} = 1/2\) state and also induces an insulating behavior.
-        Local experiment group found two high-energy excitations of the d-shell multiplet at 690 meV and 680 meV 
-        with \(A_{1g}\) and \(B_{1g}\) symmetry respectively using large shift Raman spectroscopy.
-        We give a simple theoretical model based on symmetry analysis explained the observed selection rules and suggest the corresponding possible microscopic mechanism.
-        We show that both pseudospin-flip and non-pseudosin-flip dd electronic transitions are Raman active, but only the latter are observed. 
-        The experiments and analysis place significant new constraints on the possible electronic structure of \(Sr_2IrO_4\).
-        This work is published <a href="http://dx.doi.org/10.1103/PhysRevB.91.195140">here</a>.</p>
-        <h1></h1>        
-        <h1></h1>
-        <hr>
-      </div>-->
+        <div id="AnisotropicExchange", style="text-align: center">
+	<h2>Tunneling-induced restoration of classical degeneracy in quantum kagome ice</h2>
+        </div>
+	<p> Spin-orbit coupling reduces the symmetry of the system. It turns out we
+	don't really understand the qualitative effects of the low symmetry.
+	Especially, in a constrained Hilbert space, such as ice manifold, what is the
+	effect of anisotropic quantum exchange process?	</p>
+
+	<p>This problem is not only theoretically challenging but also numerically
+	challenging. The low symmetry breaks a lot of nice property and thus strong theorem
+	such as LSM theorem is not useful for the analysis. In addition, the system with low
+	symmetry usually does not have exact solvable points. Therefore, the analytic approach
+	to study related problem is challenging. </p>
+
+	<p> From the numerical side, low symmetry also causes a problem for the
+	tensor-network based algorithm. Without continuous symmetry such as U(1) and
+	SU(2), the sparse format of the wave function is no longer valid and require
+	higher bond dimension to study. Usual model with spin-orbit coupling will have
+	the sign problem because of the nontrivial phase factor in the exchange
+	process. It turns out we don't have much understanding from large-scale
+	unbiased numerical methods for strong spin-orbit coupling systems. </p>
+
+	<p> One particular exception is the dipolar-octupolar doublets we discovered
+	above. Analyzing the quantum Monte Carlo results with Prof. Ying-Jer Kao and
+	his student Kai-Hsin Wu, we found the system stay in classical configuration
+	down to very low temperature. Why the system acts so classical down to this
+	low temperature is not clear. Using degenerate-perturbation theory, we found
+	the effective theory at 6-th order has not only quantum tunneling term but
+	also diagonal terms. Comparing with previous studies on pyrochlore lattice
+	with U(1) symmetry, our system has only \(Z_2\) symmetry. In the U(1) case the
+	comparable diagonal and quantum terms appear at the same lowest order only for
+	spin with S>1/2. Thus, the low symmetry and constrained Hilbert space
+	effectively increase the spin and make it more classical. This work can be
+	found <a href="https://arxiv.org/abs/1806.08145">here</a> </p>
+
     </div>
     <footer>
      <p>Copyright &copy; photo_style_two | <a href="http://www.css3templates.co.uk">design from css3templates.co.uk</a></p>

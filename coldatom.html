@@ -69,18 +69,93 @@
         </ul>
       </nav>
     </header>
-    <div id="site_content">
-      <div id="sidebar_container">
-        <div style="text-align: center">
-          <img src="images/dipole_chain_phase_diagram.png" width="400" height="450" alt="" />
-        </div>
-      </div>
-      <div id="content">
-        <h1>Ultracold dipolar fermions</h1>
+      <div id="site_content">
+	<div style="text-align: center">
+        <h1>Synthetic quantum matter</h1>
+	</div>
+
+	<p> The advance in atomic, molecular and optical physics allows us to explore
+	emergent quantum phases of matter in different physical regimes. Various
+	platforms ranging from cold atoms, ions, superconductor qubits, circuit QED
+	provides different paths to study quantum many-body phenomena. In addition to
+	the studies of hard condensed matter problems such as quantum simulation of
+	Hubbard model and localization, the field has been extended to study gauge
+	theories which play a fundamental role in our understanding of high-energy
+	physics and constrained quantum systems such as frustrated magnetism.
+	</p>
+	<p> In addition to the connections with various frontiers of studies, the
+	synthetic quantum matter has advantages beyond conventional settings. For
+	example,  it provides a suitable framework to study fundamental questions in
+	the dynamics of quantum many-body systems and quantum information sciences.
+	</p>
+	<div id="quench_QLM", style="text-align: center">
+        <h2>Far from equilibrium dynamics of lattice gauge theories</h2>
+	</div>
+	<p> In the last several decades, studies of gapped quantum phases of matter
+	have made significant advances on the classification of ground states and the
+	characterization of low energy excitations. However, how to extend the notion
+	to the non-equilibrium setting is still an open question. </p>
+	<div style="text-align: center">
+        <h3>Dynamical quantum phase transitions in U(1) quantum link models</h3>
+	</div>
+	<p> In equilibrium, phase transition happened when the free energy density
+	develops non-analyticity at thermodynamic limit. For out of equilibrium quantum
+	systems, the dynamics are governed by Schrodinger equation. The Loschmidt echo can be
+	formally interpreted as partition function. The rate function of the Loschmidt echo
+	thus plays a similar role to the free energy density. The dynamical quantum phase
+	transition(DQPT) happens at the critical time when this quantity develops non-analyticity.
+	The notion of phase transition is then generalized to a dynamical quantum system. The
+	study of related phenomena is still at its infancy and most understanding is built
+	from exact solvable models or low dimensional systems. It will be nice if we
+	can find more examples that is beyond above mentioned situations.
+	</p>
+
+	<p> The idea of quantum simulation has bee developed and applied on condensed
+	matter related system for decades. Recently, the concept has been pushed
+	forward to simulate gauge theories. One of the obstacles in quantum simulator
+	is the local Hilbert space is usually of finite dimensional. Quantum Link
+	Model(QLM) thus plays a special role that it provides the gauge structure using
+	finite dimensional Hilbert space. Besides, recent quantum simulation
+	experiments demonstrate the possibility of engineering gauge invariant
+	Hamiltonian and coherent many-body real time evolution.</p>
+        <div style="text-align: center"><img src="images/DQPT_FIG1.svg" width="450"
+		height="400"/></div>
+	<p> In this project, we explore the quench dynamics of gauge theories through the
+	lens of dynamical quantum phase transitions. Using time-evolving block decimation (TEBD) and
+	Lanczos-based exact diagonalization, we explore (1+1) d and (2+1) d QLMs. The
+	advantage of using TEBD is it is almost exact in (1+1) d at short time. For
+	(2+1) d, naive full spectrum ED will hit the wall of enumerating of states and
+	it can only reach 4 by 4 (32 spin) system in a reasonable time. Using
+	Lanczos-based method has two primary advantages. First, we perform exact
+	time-evolution within the Krylov subspace where the information of the sparse
+	many-body Hamiltonian is compacted in a dense effective matrix which is easy
+	to solve. Second, the Krylov space is generated at run time which reduces the
+	requirement of memory and allows us to go to larger system such as 4 by 6(48
+	spins) and 6 by 6(72 spins). Also, the Krylov space will stay in the same
+	gauge sector automatically as the Hamiltonian is gauge invariant.
+	This property helps us bypass the enumeration of gauge invariant states in a neat
+	way. The problem thus becomes manageable.
+	</p>
+
+	<p> Using the code I developed, we found DQPT in both (1+1) d and (2+1) d U(1)
+	QLMs. We also found the corresponding order parameters and describe their
+	physical meaning. This work can be found <a hre="https://arxiv.org/abs/1808.07874">here</a>.
+	</p>
+
+	<div style="text-align: center">
+        <h2>Ultracold dipolar fermions</h2>
+	</div>
         <p>Dipolar gasses are unstable under head-to-tail configuration. To stabilize dipolar gasses, different geometric arrangements are proposed. Trapping dipolar gasses in 1D tubes is one possibility.
         </p>
-        <p> In this work, we generalize previous Luttinger liquid approach of two tubes into an arbitrary number of tubes lying in the same plane with arbitrary dipole orientation. Furthermore, we are able to map out the complete phase diagram for a different number of tubes under different dipole orientation. This work potentially can be realized in near future. This work is published <a href="http://dx.doi.org/10.1103/PhysRevA.80.053610">here</a>.
+        <p> In this work, we generalize previous Luttinger liquid approach of two
+	tubes into an arbitrary number of tubes lying in the same plane with arbitrary
+	dipole orientation. Furthermore, we are able to map out the complete phase
+	diagram for a different number of tubes under different dipole orientation.
+	This work potentially can be realized in near future. This work is published
+	<a href="http://dx.doi.org/10.1103/PhysRevA.80.053610">here</a>.
         </p>
+        <div style="text-align: center">
+          <img src="images/dipole_chain_phase_diagram.png" width="400" height="450" alt="" />
       </div>
     </div>
     <footer>
