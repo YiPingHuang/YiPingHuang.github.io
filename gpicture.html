@@ -1,5 +1,13 @@
 <!DOCTYPE HTML>
 <html>
+<style type="text/css">
+/* animated spoiler CSS by Bloggersentral.com */
+.spoilerbutton {display:block;margin:5px 0;}
+.spoiler {overflow:hidden;background: #f5f5f5;}
+.spoiler > div {-webkit-transition: all 0.2s ease;-moz-transition: margin 0.2s ease;-o-transition: all 0.2s ease;transition: margin 0.2s ease;}
+.spoilerbutton[value="Description"] + .spoiler > div {margin-top:-200%;}
+.spoilerbutton[value="Hide"] + .spoiler {padding:5px;} 
+</style> 
 
 <head>
   <title>Yi-Ping Huang</title>
@@ -37,7 +45,7 @@
               <li><a href="gpicture.html">Big Picture</a></li>
               <li><a href="spicture.html">By Subject</a>
                 <ul>
-                  <li><a href="coldatom.html">Ultracold Atoms</a></li>
+                  <li><a href="coldatom.html">Synthetic Quantum Matter</a></li>
                   <li><a href="qmag.html">Quantum Magnetism</a></li>
                 </ul>
               </li>
@@ -72,18 +80,80 @@
     <div id="site_content">
       <div id="sidebar_container">
          <h1> </h1>
-       	<div style="text-align: center">
+	 <!--<div style="text-align: center">
           <img src="images/Pyrochlore.jpg" width="450" height="400" alt="" />
-         </div>
+	 </div>--!>
+
+        <div class="gallery">
+          <ul class="images">
+	    <div style="text-align: center">
+
+            <li class="show">
+	    <img width="450" height="400" src="images/Pyrochlore.jpg" alt="photo_one" /></li>
+            <li><img width="300" height="250" src="images/l_doublets.png" alt="photo_two" /></li>
+            <li><img width="450" height="150" src="images/lattice_hopping.png" alt="photo_three" /></li>
+            <li><img width="350" height="250" src="images/topo_charge.png" alt="photo_four" /></li>
+	    
+	    </div>
+          </ul>
+        </div>
+
       </div>
       <div id="content">
-        <h1>Description of my interests for general reader</h1>
-        <p>My research interests are novel emergent phenomena due to composite effects of fundamental physics. Especially, the emergent phenomena that manifest the quantum mechanical nature. The competition between different effects made those systems attractive in various aspects.
+      <li>
+        <h1>Description of my interests for general readers</h1>
+        My research interests are novel emergent phenomena due to the
+	composite effects of fundamental physics. Especially, the emergent
+	phenomena that manifest the quantum mechanical nature. The competition
+	between different effects made those systems attractive in various
+	aspects.
+        <input class="spoilerbutton" type="button" value="Description" onclick="this.value=this.value=='Description'?'Hide':'Description';">
+	<div class="spoiler"><div>
+        <p>To me, I would like to know the general properties of those effects.
+	What is its nature? For example, how the long-range anisotropic
+	dipole-dipole interaction influences quasi-one-dimensional physics?
+	Understanding the interplay between space anisotropy and anisotropy of
+	interaction is the physics that I enjoy a lot. How large spin-orbit
+	coupling changes our understanding of systems without large spin-orbit
+	coupling? Finding spin-orbit coupling provides a chance to realize a
+	more constrained model under space group symmetry and further helps to
+	achieve the exotic topological insulator, and topological order is
+	exciting!
         </p>
-        <p>To me, I would like to know the general properties of those effects. What is its nature? For example, how the long-range anisotropic dipole-dipole interaction affect the quasi-one-dimensional physics? Understanding the interplay between space anisotropy and anisotropy of interaction is the physics that I enjoy a lot. How large spin-orbit coupling changes our understanding about systems without large spin-orbit coupling? Finding spin-orbit coupling provides a chance to realize more constrained model under space group symmetry and further helps to achieve the exotic topological insulator, and topological order is exciting!
-        </p>
-        <p>In addition to theory oriented motivations, I also like to understand what happened in physical reality. I would like to develop the ability to identify interesting physics also from the experimental side and find the corresponding theory.
-        </p>
+        <p>In addition to theory oriented motivations, I also like to understand
+	what happened in physical reality. I want to develop the ability to
+	identify new physics also from the experimental side and find the
+	corresponding theory.
+	</p>
+	</li>
+	<li>
+        <h1>Techniques</h1>	
+	Since I am usually interested in studying interdisciplinary problems, I
+	don't limit myself on particular techniques. I believe new phenomena
+	requires consistent results from different approaches, and every
+	approach has its pros and cons...
+        <input class="spoilerbutton" type="button" value="Description" onclick="this.value=this.value=='Description'?'Hide':'Description';">
+	<div class="spoiler"><div>
+	<p>
+	I am willing to use theoretical or numerical techniques depends on the
+	nature of the problems. Group theory usually can shed light on the
+	possible effective model from microscopic physics. On the other hand,
+	low energy physics are usually captured by long wavelength physics where
+	field theory helps us develop a universal picture for the system.
+	</p>
+	<p>
+	Sometimes one can also benefit a lot by connecting the problem to
+	exactly solvable models where certain topological properties are
+	preserved. However, one should also keep in mind that exactly
+	solvability implicitly assumes certain physical properties that the
+	system may not satisfy. Numerical techniques can help us develop some
+	theoretical picture. With physical inputs, the numerical results could
+	be very insightful. For example, tensor network methods compress the
+	information of the wave function in an efficient way. Lanczos algorithm
+	takes advantage of the locality of the Hamiltonian and expands the
+	ability to  study real-time dynamics of quantum many-body systems.
+	</p>
+	</li>
       </div>
     </div>
     <footer>

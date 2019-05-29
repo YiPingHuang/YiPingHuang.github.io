@@ -26,7 +26,8 @@ article, aside, figure, footer, header, hgroup, nav, section {
 
 body { 
   font: normal .80em arial, sans-serif;
-  background: #000 url(../images/pattern.png);
+  /*background: #000 url(../images/pattern.png);*/
+  background: #000 url(../images/pattern_old.png);
   color: #444;
 }
 
