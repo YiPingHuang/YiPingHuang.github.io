@@ -26,6 +26,8 @@ article, aside, figure, footer, header, hgroup, nav, section {
 
 body { 
   font: normal .80em arial, sans-serif;
+  /*font-size: 100%;*/
+  font-size: 110%;
   /*background: #000 url(../images/pattern.png);*/
   background: #000 url(../images/pattern_old.png);
   color: #444;
@@ -138,7 +140,8 @@ ol li {
 
 #main {
   margin: 5px auto;
-  width: 930px;
+  /*width: 930px;*/
+  width: 1200px;
   background: transparent;
   padding-bottom: 30px;
 }
@@ -150,8 +153,10 @@ header {
 }
 
 #logo { 
-  width: 300px;
-  height: 150px;
+  /*width: 300px;*/
+  width: 1500px;
+  /*height: 150px;*/
+  height: 120px;
   background: transparent;
   color: #888;
   padding: 0 0 0 25px;
@@ -186,9 +191,11 @@ header {
   color: #222;
 }
 
-nav { 
-  height: 44px;
-  width: 928px;
+nav { /* The bar*/ 
+  /*height: 44px;*/
+  height: 60px;
+  /*width: 928px;*/
+  width: 1200px;
   float: right;
   margin: -20px auto 20px auto;
   color: #222;
@@ -203,7 +210,8 @@ nav {
 } 
 
 #site_content { 
-  width: 930px;
+  /*width: 930px;*/
+  width: 1200px;
   overflow: hidden;
   margin: 20px auto;
   background: #FFF;
@@ -211,14 +219,16 @@ nav {
 
 #sidebar_container { 
   float: right;
-  width: 450px;
+  /*width: 450px;*/
+  width: 560px;
   padding: 0;
   height: 450px;
 }
 
 #content { 
   text-align: left;
-  width: 440px;
+  /*width: 440px;*/
+  width: 540px;
   margin: 0 0 0 0;
   float: left;
   padding: 0 20px 20px 20px;

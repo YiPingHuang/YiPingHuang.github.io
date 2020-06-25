@@ -12,6 +12,12 @@
   <script type="text/javascript"
      src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
   </script>
+  <style>
+	.TextWrap {
+		float: left;
+		margin: 10pt;
+	}
+  </style>
 </head>
 
 <body>
@@ -20,9 +26,7 @@
  		<div id="logo">
         <div id="logo_text">
           <!-- class="logo_colour", allows you to change the colour of the text -->
-          <h1><a href="index.html">Yi-Ping<span class="logo_colour"> Huang</span></a></h1>
-          <h2>Simple site about physics and stuff...</h2>
-	  <h2>黃一平的個人網頁</h2>
+          <h1><a href="index.html">Yi-Ping<span class="logo_colour"> Huang</span></a>: Theory of emergent quantum matter</h1>
         </div>
       </div>
       <nav>
@@ -38,7 +42,7 @@
           <li><a href="gpicture.html">Research Interests</a>
             <ul>
               <li><a href="gpicture.html">Big Picture</a></li>
-              <li><a href="spicture.html">By Subject</a>
+              <li><a href="gpicture.html">By Subject</a>
                 <ul>
                   <li><a href="coldatom.html">Synthetic Quantum Matter</a></li>
                   <li><a href="qmag.html">Quantum Magnetism</a></li>
@@ -50,7 +54,7 @@
             </ul>
           </li>
           <li><a href="https://qemergence.wordpress.com">Blog</a></li>
-          <li><a href="links.html">Links</a></li>
+          <li><a href="links.html">Working with us</a></li>
           <li><a href="contact.html">Contact</a></li>
           <li><a href="#">Teaching</a>
             <ul>
@@ -73,6 +77,7 @@
       </nav>
     </header>
       <div id="site_content">
+	<ul>
 	<div style="text-align: center">
         <h1>Synthetic quantum matter</h1>
 	</div>
@@ -130,6 +135,8 @@
 	from exact solvable models or low dimensional systems. It will be nice if we
 	can find more examples that is beyond above mentioned situations.
 	</p>
+        <div style="text-align: center"><img src="images/DQPT_FIG1.svg" width="450"
+		height="400" CLASS="TextWrap"/></div>
 
 	<p> The idea of quantum simulation has bee developed and applied on condensed
 	matter related system for decades. Recently, the concept has been pushed
@@ -139,8 +146,7 @@
 	finite dimensional Hilbert space. Besides, recent quantum simulation
 	experiments demonstrate the possibility of engineering gauge invariant
 	Hamiltonian and coherent many-body real time evolution.</p>
-        <div style="text-align: center"><img src="images/DQPT_FIG1.svg" width="450"
-		height="400"/></div>
+
 	<p> In this project, we explore the quench dynamics of gauge theories through the
 	lens of dynamical quantum phase transitions. Using time-evolving block decimation (TEBD) and
 	Lanczos-based exact diagonalization, we explore (1+1) d and (2+1) d QLMs. The
@@ -163,9 +169,12 @@
 	physical meaning. This work can be found <a href="https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.122.250401">here</a>.
 	</p>
 
-	<div style="text-align: center">
+	<div id="d_fermion" style="text-align: center">
         <h2>Ultracold dipolar fermions</h2>
 	</div>
+        <div style="text-align: center">
+          <img src="images/dipole_chain_phase_diagram.png" width="400" height="450" alt="" CLASS="TextWrap"/>
+      </div>
         <p>Dipolar gasses are unstable under head-to-tail configuration. To stabilize dipolar gasses, different geometric arrangements are proposed. Trapping dipolar gasses in 1D tubes is one possibility.
         </p>
         <p> In this work, we generalize previous Luttinger liquid approach of two
@@ -175,9 +184,7 @@
 	This work potentially can be realized in near future. This work is published
 	<a href="http://dx.doi.org/10.1103/PhysRevA.80.053610">here</a>.
         </p>
-        <div style="text-align: center">
-          <img src="images/dipole_chain_phase_diagram.png" width="400" height="450" alt="" />
-      </div>
+     </ul>
     </div>
     <footer>
      <p>Copyright &copy; photo_style_two | <a href="http://www.css3templates.co.uk">design from css3templates.co.uk</a></p>

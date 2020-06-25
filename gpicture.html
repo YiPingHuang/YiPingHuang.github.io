@@ -17,17 +17,21 @@
   <link rel="stylesheet" type="text/css" href="css/style.css" />
   <!-- modernizr enables HTML5 elements and feature detects -->
   <script type="text/javascript" src="js/modernizr-1.5.min.js"></script>
+  <style>
+	.TextWrap {
+		float: right;
+		margin: 10pt;
+	}
+  </style>
 </head>
 
 <body>
   <div id="main">
     <header>
- 		<div id="logo">
+      <div id="logo">
         <div id="logo_text">
           <!-- class="logo_colour", allows you to change the colour of the text -->
-          <h1><a href="index.html">Yi-Ping<span class="logo_colour"> Huang</span></a></h1>
-          <h2>Simple site about physics and stuff...</h2>
-	  <h2>黃一平的個人網頁</h2>
+          <h1><a href="index.html">Yi-Ping<span class="logo_colour"> Huang</span></a>: Theory of emergent quantum matter</h1>
         </div>
       </div>
       <nav>
@@ -43,7 +47,7 @@
           <li><a href="gpicture.html">Research Interests</a>
             <ul>
               <li><a href="gpicture.html">Big Picture</a></li>
-              <li><a href="spicture.html">By Subject</a>
+              <li><a href="gpicture.html">By Subject</a>
                 <ul>
                   <li><a href="coldatom.html">Synthetic Quantum Matter</a></li>
                   <li><a href="qmag.html">Quantum Magnetism</a></li>
@@ -55,7 +59,7 @@
             </ul>
           </li>
 	  <li><a href="https://qemergence.wordpress.com">Blog</a></li>
-          <li><a href="links.html">Links</a></li>
+          <li><a href="links.html">Working with us</a></li>
           <li><a href="contact.html">Contact</a></li>
           <li><a href="#">Teaching</a>
             <ul>
@@ -78,28 +82,30 @@
       </nav>
     </header>
     <div id="site_content">
-      <div id="sidebar_container">
+      <!--<div id="sidebar_container">
          <h1> </h1>
-	 <!--<div style="text-align: center">
+         <h1> </h1>
+	 <div style="text-align: center">
           <img src="images/Pyrochlore.jpg" width="450" height="400" alt="" />
-	 </div>--!>
-
+	 </div>
         <div class="gallery">
           <ul class="images">
 	    <div style="text-align: center">
-
             <li class="show">
 	    <img width="450" height="400" src="images/Pyrochlore.jpg" alt="photo_one" /></li>
             <li><img width="300" height="250" src="images/l_doublets.png" alt="photo_two" /></li>
             <li><img width="450" height="150" src="images/lattice_hopping.png" alt="photo_three" /></li>
             <li><img width="350" height="250" src="images/topo_charge.png" alt="photo_four" /></li>
-	    
 	    </div>
           </ul>
         </div>
-
       </div>
-      <div id="content">
+-->
+<!-- <div id="content">-->
+     <ul>
+	 <div style="text-align: center">
+          <img src="images/Pyrochlore.jpg" width="270" height="240" alt="" CLASS="TextWrap"/>
+	 </div>
       <li>
         <h1>Description of my interests for general readers</h1>
 	<p>
@@ -127,6 +133,26 @@
 	identify new physics also from the experimental side and find the
 	corresponding theory.
 	</p>
+	</li>
+	<li>
+        <h1>Projects I have been working on</h1>
+       	<div style="text-align: center">
+          <img src="images/Katsura_river2.jpg" width="450" height="350" alt="" CLASS="TextWrap"/>
+         </div>
+        <p>Quantum phases of matter which manifest their quantum nature at the macroscopic scale are amazing. Especially, symmetry and the entanglement pattern interwind with each other and give fruitful structure in theory.
+        </p>
+        <p>I have been working on several different projects:
+        </p>
+        <ul>
+            <li><a href="coldatom.html#d_fermion">Ultracold dipolar fermions</a></li>
+            <li><a href="qmag.html#QSL">Quantum spin liquids- realistic models and the smoking gun evidence.</a></li>
+            <li><a href="qmag.html#Ir">Collaboration with experimentalists on the study of correlated strong spin-orbit coupled materials.</a></li>
+            <li><a href="qmag.html#Topology">Classification of space group protected topological order</a></li>
+	    <li><a href="coldatom.html#quench_QLM">nonequilibrium</a> and <a
+	    href="qmag.html#AnisotropicExchange">equilibrium</a> physics of
+    constrained quantum many-body systems.</li>
+        </ul>
+
 	</li>
 	<li>
         <h1>Techniques</h1>	
@@ -167,7 +193,9 @@
 	ability to  study real-time dynamics of quantum many-body systems.
 	</p>
 	</li>
-      </div>
+	<!--     </div> -->
+
+	</ul>
     </div>
     <footer>
      <p>Copyright &copy; photo_style_two | <a href="http://www.css3templates.co.uk">design from css3templates.co.uk</a></p>

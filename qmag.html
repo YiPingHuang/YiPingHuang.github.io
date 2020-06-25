@@ -12,6 +12,12 @@
   <script type="text/javascript"
      src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
   </script>
+  <style>
+	.TextWrap {
+		float: left;
+		margin: 10pt;
+	}
+  </style>
 </head>
 
 <body>
@@ -20,9 +26,7 @@
  		<div id="logo">
         <div id="logo_text">
           <!-- class="logo_colour", allows you to change the colour of the text -->
-          <h1><a href="index.html">Yi-Ping<span class="logo_colour"> Huang</span></a></h1>
-          <h2>Simple site about physics and stuff...</h2>
-	  <h2>黃一平的個人網頁</h2>
+          <h1><a href="index.html">Yi-Ping<span class="logo_colour"> Huang</span></a>: Theory of emergent quantum matter</h1>
         </div>
       </div>
       <nav>
@@ -38,7 +42,7 @@
           <li><a href="gpicture.html">Research Interests</a>
             <ul>
               <li><a href="gpicture.html">Big Picture</a></li>
-              <li><a href="spicture.html">By Subject</a>
+              <li><a href="gpicture.html">By Subject</a>
                 <ul>
                   <li><a href="coldatom.html">Synthetic Quantum Matter</a></li>
                   <li><a href="qmag.html">Quantum Magnetism</a></li>
@@ -50,7 +54,7 @@
             </ul>
           </li>
           <li><a href="https://qemergence.wordpress.com">Blog</a></li>
-          <li><a href="links.html">Links</a></li>
+          <li><a href="links.html">Working with us</a></li>
           <li><a href="contact.html">Contact</a></li>
           <li><a href="#">Teaching</a>
             <ul>
@@ -73,6 +77,7 @@
       </nav>
     </header>
     <div id="site_content">
+       <ul>
         <div style="text-align: center">
         <h1>Quantum magnetism with large spin-orbit coupling</h1>
         </div>
@@ -87,12 +92,14 @@
         <div id="QSL", style="text-align: center">
         <h2>Ions with large spin-orbit coupling on pyrochlore lattice</h2>
         </div>
+        <div style="text-align: center">
+        <img src="images/l_doublets.png" width="300" height="230"/>
+        <img src="images/QSI_phase_diagram.png" width="500" height="230" alt="" /></div>
         <p> We study a family of materials of 5d or 4f ions on pyrochlore lattice. Considering both spin-orbit coupling and crystal field splitting, a type of Kramers doublets transform according to two distinct 1-dimensional irreducible representation under the \(D_{3d}\) site symmetry can be realized.
         We dub these doublets dipolar-octupolar(DO) doublets because the pseudo-spin operator formed by those doublets transform in a non-trivial way under symmetry operation. Such model has the potential to realize not only topological insulator but also quantum spin ices which are long ranged entangled quantum states in 3+1D at different limit.
         This work is published <a href="http://dx.doi.org/10.1103/PhysRevLett.112.167203">here</a>. </p>
         <div style="text-align: center">
-        <img src="images/l_doublets.png" width="300" height="230"/>
-        <img src="images/QSI_phase_diagram.png" width="500" height="230" alt="" /></div>
+        <img src="images/Band.png" width="400" height="300" alt="" CLASS="TextWrap"/></div>
         <p>At the localized limit, we got a nearest-neighbor coupled XYZ exchange model on pyrochlore lattice. Because of the special transformation properties under site symmetry,
         the model is surprisingly simple. A large portion of the parameter space had no sign problem and can be studied with large scale quantum Monde Carlo. Besides, our model
         provides a "quasi-realistic" way to realize onsite \(Z_2\times Z_2\) symmetry for nearest-neighbor exchange model on pyrochlore lattice.
@@ -104,7 +111,10 @@
         W point degeneracy will be removed. And leads to a strong topological insulator.
         </p>
         <div style="text-align: center">
-        <img src="images/Band.png" width="400" height="300" alt="" /></div>
+        <img src="images/Oct_liquid.jpeg" width="124" height="165" alt="" CLASS="TextWrap"/></div>
+	<h4>Updates</h4>
+	<p> After our proposal, there are several interesting experiments about the dipolar-octupolar doublets. Related materials reveals various different kinds of physics including moment fragmentation, non-trivial all-in-all out order, and interesting disordered states. We list those articles here. Especially, recent work found disordered phases formed by octupolar components down to measurable temperature. It is exciting to have such experiments. The true nature of the disordered state is still not clear and worth further studies.
+	</p>
         
         <div style="text-align: center">
         <h2>Theory of quantum Kagome ice and vison zero modes</h2>
@@ -133,6 +143,11 @@
         <div id="Ir", style="text-align: center">
         <h2>High energy Raman signal in \(Sr_2IrO_4\)</h2>
         </div>
+        <div style="text-align: center">
+        <img src="images/cluster.png" width="315" height="306" alt="" CLASS="TextWrap"/>
+        </div>
+	</br>
+	</br>
         <p>Spin-orbit interaction in \(Sr_2IrO_4\) leads to the realization of the \(J_{\mathrm{eff}} = 1/2\) state and also induces an insulating behavior.
         Local experiment group found two high-energy excitations of the d-shell multiplet at 690 meV and 680 meV 
         with \(A_{1g}\) and \(B_{1g}\) symmetry respectively using large shift Raman spectroscopy.
@@ -140,24 +155,25 @@
         We show that both pseudospin-flip and non-pseudosin-flip dd electronic transitions are Raman active, but only the latter are observed. 
         The experiments and analysis place significant new constraints on the possible electronic structure of \(Sr_2IrO_4\).
         This work is published <a href="http://dx.doi.org/10.1103/PhysRevB.91.195140">here</a>.</p>
-        <div style="text-align: center">
-        <img src="images/cluster.png" width="350" height="340" alt="" />
-        </div>
-      <hr>
+	</br>
+	</br>
+	<p>
+        <hr>
+	</p>
 	<!--<div id="Ir", style="text-align: center">-->
         <div id="Topology", style="text-align: center">
         <h2>Building crystalline topological phases from lower-dimensional states</h2>
         </div>
         <p>Topological phases protected by the geometrical symmetries of crystal lattices turn out to be surprisingly simple. They can be built from simpler lower-dimensional states, arranged in a crystalline pattern. </p>
             
+        <div style="text-align: center">
+        <img src="images/topo_charge.png" width="400" height="280" alt="" CLASS="TextWrap"/>
+        </div>
         <p>We study the classification of symmetry-protected topological (SPT) phases with crystalline symmetry (cSPT phases). Focusing on bosonic cSPT phases in two and three dimensions, we introduce a simple family of cSPT states, where the system is comprised of decoupled lower-dimensional building blocks that are themselves SPT states. We introduce a procedure to classify these block states, which surprisingly reproduces a classification of cSPT phases recently obtained by Thorngren and Else (arXiv:1612.00846) using very different methods, for all wallpaper and space groups. The explicit constructions underlying our results clarify the physical properties of the phases classified by Thorngren and Else, and expose additional structure in the classification. Moreover, the states we classify can be completely characterized by point-group SPT (pgSPT) invariants and related weak pgSPT invariants that we introduce. In many cases, the weak invariants can be visualized in terms of translation-symmetric stacking of lower-dimensional pgSPT states. We apply our classification to propose a Lieb-Shultz-Mattis–type constraint for two-dimensional spin systems with only crystalline symmetry, and establish this constraint by a dimensional reduction argument. Finally, the surprising matching with the Thorngren-Else classification leads us to conjecture that all SPT phases protected only by crystalline symmetry can be built from lower-dimensional blocks of invertible topological states. We argue that this conjecture holds if we make a certain physically reasonable but unproven assumption.
         
         This work is published <a href="https://journals.aps.org/prb/abstract/10.1103/PhysRevB.96.205106">here</a>.</p>
         
       <p> There is an old saying : 醉翁之意不在酒，在乎山水之間也。 In describe the following scenario. During the hiking, tasting the good wine in the mountain is not the goal. Instead the true purpose is to savour the beautiful view of the mountains.</p>
-        <div style="text-align: center">
-        <img src="images/topo_charge.png" width="400" height="280" alt="" />
-        </div>
 
       <hr>
         <div id="AnisotropicExchange", style="text-align: center">
@@ -167,7 +183,9 @@
 	don't really understand the qualitative effects of the low symmetry.
 	Especially, in a constrained Hilbert space, such as ice manifold, what is the
 	effect of anisotropic quantum exchange process?	</p>
-
+        <div style="text-align: center">
+        <img src="images/QKI.png" width="610" height="294" alt="" CLASS="TextWrap"/>
+        </div>
 	<p>This problem is not only theoretically challenging but also numerically
 	challenging. The low symmetry breaks a lot of nice properties and thus strong theorem
 	such as LSM theorem is not useful for the analysis. In addition, the system with low
@@ -193,8 +211,8 @@
 	comparable diagonal and quantum terms appear at the same lowest order only for
 	spin with S>1/2. Thus, the low symmetry and constrained Hilbert space
 	effectively increase the spin and make it more classical. This work can be
-	found <a href="https://arxiv.org/abs/1806.08145">here</a> </p>
-
+	found <a href="https://journals.aps.org/prb/abstract/10.1103/PhysRevB.99.134440">here</a> </p>
+       </ul>
     </div>
     <footer>
      <p>Copyright &copy; photo_style_two | <a href="http://www.css3templates.co.uk">design from css3templates.co.uk</a></p>
