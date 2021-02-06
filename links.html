@@ -1,5 +1,13 @@
 <!DOCTYPE HTML>
 <html>
+<style type="text/css">
+/* animated spoiler CSS by Bloggersentral.com */
+.spoilerbutton {display:block;margin:5px 0;}
+.spoiler {overflow:hidden;background: #f5f5f5;}
+.spoiler > div {-webkit-transition: all 0.2s ease;-moz-transition: margin 0.2s ease;-o-transition: all 0.2s ease;transition: margin 0.2s ease;}
+.spoilerbutton[value="Description"] + .spoiler > div {margin-top:-200%;}
+.spoilerbutton[value="Hide"] + .spoiler {padding:5px;} 
+</style> 
 
 <head>
   <title>Yi-Ping Huang</title>
@@ -9,6 +17,12 @@
   <link rel="stylesheet" type="text/css" href="css/style.css" />
   <!-- modernizr enables HTML5 elements and feature detects -->
   <script type="text/javascript" src="js/modernizr-1.5.min.js"></script>
+  <style>
+	.TextWrap {
+		float: right;
+		margin: 10pt;
+	}
+  </style>
 </head>
 
 <body>
@@ -47,22 +61,7 @@
 	  <li><a href="https://qemergence.wordpress.com">Blog</a></li>
           <li><a href="links.html">Working with us</a></li>
           <li><a href="contact.html">Contact</a></li>
-          <li><a href="#">Teaching</a>
-            <ul>
-              <!-- <li><a href="#">Drop Down One</a></li> -->
-              <li><a href="#">Drop Down Two</a>
-                <ul>
-                  <li><a href="#">Sub Drop Down One</a></li>
-                  <!--<li><a href="#">Sub Drop Down Two</a></li>-->
-                  <!--<li><a href="#">Sub Drop Down Three</a></li>-->
-                  <!--<li><a href="#">Sub Drop Down Four</a></li>-->
-                  <!--<li><a href="#">Sub Drop Down Five</a></li>-->
-                </ul>
-              </li>
-              <!--<li><a href="#">Drop Down Three</a></li>-->
-              <!--<li><a href="#">Drop Down Four</a></li>-->
-              <!--<li><a href="#">Drop Down Five</a></li>-->
-            </ul>
+          <li><a href="teaching.html">Teaching</a>
           </li>
         </ul>
       </nav>
@@ -79,38 +78,43 @@
       <!-- <div id="content"> -->
       <ul>
         <h2>Job Openings</h2>
+	<li>
         <h3>Postdoctoral positions</h3>
-	<h5>Announcement date: June 2020</h5>
+	<h5>Announcement date: Jan 2021</h5>
+	<div style="text-align: center">
+          <img src="images/NTHU_Phys.jpg" width="423" height="329" alt="NTHU department of physics" CLASS="TextWrap"/>
+         </div>
 	<p>
 	Applications are invited for open postdoctoral positions in correlated electron theory to begin on or before September 1, 2021. (Earliest starting date will be February 1 2021. ) We would like to focus on correlated effects in topological phases of matter, quantum magnetism, superconductivity, disorder systems and non-equilibrium systems.
 	</p>
+        <input class="spoilerbutton" type="button" value="Description" onclick="this.value=this.value=='Description'?'Hide':'Description';">
+	<div class="spoiler"><div>
 	<p>
-	The positions focuse on theoretical quantum condensed matter physics in the broadest sense. The candidate is encouraged to form collaborations within and outside the group. Theoretical physics faculty at the department presently includes Miguel A. Cazalilla, Po-Yao Chang, Pochung Chen, Horng-Tay Jeng, Hsiu-Hau Lin, Chung-Yu Mou and Daw-Wei Wang.
+	The positions focuse on theoretical quantum condensed matter physics in the broadest sense. The candidate is encouraged to form collaborations within and outside the group. Theoretical physics faculty at the department presently includes Po-Yao Chang, Pochung Chen, Horng-Tay Jeng, Hsiu-Hau Lin, Chung-Yu Mou and Daw-Wei Wang.
 	</p>
 	<p>
 	The Department of Physics at the National Tsing-Hua University offers rich opportunities for collaborations with theoretical groups in Taiwan, including National Taiwan University and National Chiao Tung University in close proximity.
 	</p>
 	<p>
-	Interested candidates should send a brief statement of research interests/experience, a CV with a list of publications, and arrange to have three letters of recommendation sent to: yi-ping.huang@psi.ch 
+	Interested candidates should send a brief statement of research interests/experience, a CV with a list of publications, and arrange to have three letters of recommendation sent to: yphuang@phys.nthu.edu.tw
+	</p>
+	<p>
 	Review of applications will begin immediately, and will continue until the position is filled.
 	</p>
+	</li>
+	<li>
         <h3>Ph. D. and Master students</h3>
-	<h5>Announcement date: June 2020</h5>
+	<h5>Announcement date: Jan 2021</h5>
 	<p>
-	Students are invited for studying in correlated theory. We would like to focus on correlated effects in topological phases of matter, quantum magnetism, superconductivity, and non-equilibrium systems. Contact Yi-Ping at yi-ping.huang@psi.ch to find out more!
+	Students are invited for studying in correlated theory. We would like to focus on correlated effects in topological phases of matter, quantum magnetism, superconductivity, and non-equilibrium systems. Contact Yi-Ping at yphuang@phys.nthu.edu.tw  to find out more!
 	</p>
+	</li>
 
 	<hr>
-        <h3>Useful tools for research</h3>
-        <p><a href="http://nbviewer.ipython.org/gist/YiPingHuang/0fcf334d8d5396a37a9b">Jupyter</a>
-	whenever you need a Mexican hat!</p>
-	<p><a href="http://www.vim.org">Vim</a> is a good thing, maybe the best
-	of things, and no good thing ever dies.</p>
-	<p><a href="https://tensornetwork.org">Tensor Networking</a> is
-	important when the world is exponentially large.</p>
-	<p><a href="http://arma.sourceforge.net">ARMY-dillo</a> for a large
-	group of armadillo.</p>
+        <h2>Group members</h2>
 	<!-- </div> -->
+	<li> PI: Yi-Ping Huang (黃一平)
+	</li>
       </ul>
     </div>
     <footer>
